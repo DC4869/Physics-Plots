@@ -24,6 +24,7 @@ document.querySelectorAll('.plot-card').forEach((card) => {
     const button = e.currentTarget;
     const plotFile = button?.dataset?.plotFile;
     const plotFiles = button?.dataset?.plotFiles;
+    const plotColumnHeaders = button?.dataset?.plotColumnHeaders;
     const plotGridLayout = button?.dataset?.plotGridLayout;
     const plotTitle = button?.dataset?.plotTitle;
 
@@ -41,8 +42,9 @@ document.querySelectorAll('.plot-card').forEach((card) => {
       await loadGridLayoutPDFs(gridLayout);
     } else if (plotFiles) {
       const files = JSON.parse(plotFiles);
+      const columnHeaders = plotColumnHeaders ? JSON.parse(plotColumnHeaders) : undefined;
       multiPdfMode = true;
-      await loadMultiplePDFs(files);
+      await loadMultiplePDFs(files, columnHeaders);
     } else if (plotFile) {
       multiPdfMode = false;
       await loadPDF(plotFile);
@@ -188,7 +190,7 @@ async function loadGridLayoutPDFs(gridLayout) {
   pdfGridContainer.appendChild(rowHeaderLabel);
 }
 
-async function loadMultiplePDFs(urls) {
+async function loadMultiplePDFs(urls, columnHeaders) {
   if (!pdfGridContainer) return;
 
   // Show grid controls for multi-file view
@@ -204,8 +206,25 @@ async function loadMultiplePDFs(urls) {
   pdfGridContainer.className = 'multi-pdf-grid';
   pdfGridContainer.style.gridTemplateColumns = `repeat(${pdfGridColsSelect?.value || 4}, 1fr)`;
 
-  // Load and render each file
-  for (const url of urls) {
+  // Create a map of indices where headers should appear
+  const headerMap = new Map();
+  if (columnHeaders && Array.isArray(columnHeaders)) {
+    columnHeaders.forEach(header => {
+      headerMap.set(header.afterIndex, header.text);
+    });
+  }
+
+  // Load and render each file with headers
+  for (let i = 0; i < urls.length; i++) {
+    // Check if we need to insert a header before this plot
+    if (headerMap.has(i)) {
+      const headerElement = document.createElement('div');
+      headerElement.className = 'multi-pdf-header';
+      headerElement.textContent = headerMap.get(i);
+      pdfGridContainer.appendChild(headerElement);
+    }
+
+    const url = urls[i];
     const canvasElement = document.createElement('canvas');
     canvasElement.className = 'pdf-canvas';
     pdfGridContainer.appendChild(canvasElement);

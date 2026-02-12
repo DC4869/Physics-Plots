@@ -243,6 +243,21 @@ h1 {
   gap: 0rem;
 }
 
+/* Multi-PDF Column Headers */
+.multi-pdf-header {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--color-primary);
+  padding: 1rem 0.5rem;
+  margin-top: 1rem;
+}
+
+.multi-pdf-header:first-child {
+  margin-top: 0;
+}
+
 #pdf-grid-container.table-grid {
   display: grid;
   gap: 0.0rem;

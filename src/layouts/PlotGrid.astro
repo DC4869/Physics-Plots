@@ -13,6 +13,10 @@ interface Props {
     axes: { x: string; y: string };
     file?: string;
     files?: string[];
+    columnHeaders?: Array<{
+      afterIndex: number;
+      text: string;
+    }>;
     gridLayout?: {
       rowHeader: string;
       colHeader: string;
@@ -41,6 +45,7 @@ const { projectName, subpageName, plots, backLink, defaultGridCols = 4 } = Astro
           data-plot-id={plot.id}
           data-plot-file={plot.file}
           data-plot-files={plot.files ? JSON.stringify(plot.files) : undefined}
+          data-plot-column-headers={plot.columnHeaders ? JSON.stringify(plot.columnHeaders) : undefined}
           data-plot-grid-layout={plot.gridLayout ? JSON.stringify(plot.gridLayout) : undefined}
           data-plot-title={plot.title}
           data-plot-description={plot.description}
