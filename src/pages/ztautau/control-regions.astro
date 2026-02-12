@@ -3,7 +3,7 @@ import PlotGrid from '../../layouts/PlotGrid.astro';
 import ztautauConfig from '../../data/ztautau.json';
 
 const project = ztautauConfig;
-const subpage = project.subpages.find(s => s.id === 'background');
+const subpage = project.subpages.find(s => s.id === 'control-regions');
 
 if (!project || !subpage) throw new Error('Page not found');
 ---
