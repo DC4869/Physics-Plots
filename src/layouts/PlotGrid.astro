@@ -5,6 +5,7 @@ import '../styles/plot-grid.css';
 interface Props {
   projectName: string;
   subpageName: string;
+  defaultGridCols?: number;
   plots: Array<{
     id: string;
     title: string;
@@ -23,7 +24,7 @@ interface Props {
   backLink: string;
 }
 
-const { projectName, subpageName, plots, backLink } = Astro.props;
+const { projectName, subpageName, plots, backLink, defaultGridCols = 4 } = Astro.props;
 ---
 
 <Base title={`${projectName} - ${subpageName}`}>
@@ -59,7 +60,7 @@ const { projectName, subpageName, plots, backLink } = Astro.props;
   </div>
 
   <!-- Modal for PDF display -->
-  <div id="plot-modal" class="modal">
+  <div id="plot-modal" class="modal" data-default-grid-cols={defaultGridCols}>
     <div class="modal-backdrop"></div>
     <div class="modal-content">
       <div class="modal-header">
@@ -92,16 +93,18 @@ const { projectName, subpageName, plots, backLink } = Astro.props;
 
   <script type="module" src="/scripts/plot-grid.js" is:inline></script>
   <script>
-    // Set default columns based on screen size
+    // Set default columns based on screen size and config
     const pdfGridColsSelect = document.getElementById('pdf-grid-cols') as HTMLSelectElement | null;
+    const plotModal = document.getElementById('plot-modal');
+    const configuredCols = Number(plotModal?.getAttribute('data-default-grid-cols')) || 4;
     if (pdfGridColsSelect) {
       const isMobile = window.innerWidth < 768;
-      pdfGridColsSelect.value = isMobile ? '1' : '4';
+      pdfGridColsSelect.value = isMobile ? '1' : String(configuredCols);
       
       // Update on window resize
       window.addEventListener('resize', () => {
         const newIsMobile = window.innerWidth < 768;
-        pdfGridColsSelect.value = newIsMobile ? '1' : '4';
+        pdfGridColsSelect.value = newIsMobile ? '1' : String(configuredCols);
       });
     }
   </script>

@@ -6,6 +6,7 @@
     {
       "id": "control-regions",
       "name": "Control Regions",
+      "defaultGridCols": 5,
       "plots": [
         {
           "id": "charged_pion_eta",
@@ -156,16 +157,19 @@
     {
       "id": "background",
       "name": "Background Modeling",
+      "defaultGridCols": 4,
       "plots": []
     },
     {
       "id": "systematics",
       "name": "Systematic Uncertainties",
+      "defaultGridCols": 4,
       "plots": []
     },
     {
       "id": "fits",
       "name": "Signal Fits",
+      "defaultGridCols": 4,
       "plots": []
     }
   ]

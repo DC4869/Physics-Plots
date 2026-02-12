@@ -6,6 +6,7 @@
   {
     "id": "input",
     "name": "Network Input Distributions",
+    "defaultGridCols": 4,
     "plots": 
       [
         {
@@ -113,6 +114,7 @@
     {
       "id": "results",
       "name": "Network Outputs",
+      "defaultGridCols": 4,
       "plots": 
       [
         {
