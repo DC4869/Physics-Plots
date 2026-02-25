@@ -579,6 +579,39 @@
             "/plots/ztautau/crs/plot_lep_q_mu1p1n_18_WCR_SS_anti_ID_tight_single_mu.pdf",
             "/plots/ztautau/crs/plot_lep_q_mu1p1n_18_WCR_OS_anti_ID_tight_single_mu.pdf"
           ]
+        },
+        {
+          "id": "W_fits",
+          "title": "Shape Fits, W+jets",
+          "description": "Different functional fits to W+jet simulation in CRs",
+          "axes": { "x": "q", "y": "Events"},
+          "columnHeaders": [
+            { "afterIndex": 0, "text": "Linear (mx + b)" },
+            { "afterIndex": 10, "text": "Cosine (a + b cos(2x-c))" }
+          ],
+          "files": [
+            "/plots/ztautau/crs/W_SR_SS_linear.png",
+            "/plots/ztautau/crs/W_QCDCR_SS_linear.png",
+            "/plots/ztautau/crs/W_QCDCR_OS_linear.png",
+            "/plots/ztautau/crs/W_WCR_SS_linear.png",
+            "/plots/ztautau/crs/W_WCR_OS_linear.png",
+            "/plots/ztautau/crs/W_SR_OS_anti_ID_linear.png",
+            "/plots/ztautau/crs/W_QCDCR_SS_anti_ID_linear.png",
+            "/plots/ztautau/crs/W_QCDCR_OS_anti_ID_linear.png",
+            "/plots/ztautau/crs/W_WCR_SS_anti_ID_linear.png",
+            "/plots/ztautau/crs/W_WCR_OS_anti_ID_linear.png",
+
+            "/plots/ztautau/crs/W_SR_SS_cosine.png",
+            "/plots/ztautau/crs/W_QCDCR_SS_cosine.png",
+            "/plots/ztautau/crs/W_QCDCR_OS_cosine.png",
+            "/plots/ztautau/crs/W_WCR_SS_cosine.png",
+            "/plots/ztautau/crs/W_WCR_OS_cosine.png",
+            "/plots/ztautau/crs/W_SR_OS_anti_ID_cosine.png",
+            "/plots/ztautau/crs/W_QCDCR_SS_anti_ID_cosine.png",
+            "/plots/ztautau/crs/W_QCDCR_OS_anti_ID_cosine.png",
+            "/plots/ztautau/crs/W_WCR_SS_anti_ID_cosine.png",
+            "/plots/ztautau/crs/W_WCR_OS_anti_ID_cosine.png"
+          ]
         }
       ]
     },
