@@ -587,7 +587,9 @@
           "axes": { "x": "q", "y": "Events"},
           "columnHeaders": [
             { "afterIndex": 0, "text": "Linear (mx + b)" },
-            { "afterIndex": 10, "text": "Cosine (a + b cos(2x-c))" }
+            { "afterIndex": 10, "text": "Cosine (a + b cos(2x-c))" },
+            { "afterIndex": 20, "text": "Upsilon > 0.5, Cosine Fit (a + b cos(2x-c))"},
+            { "afterIndex": 30, "text": "Upsilon < 0.5, Cosine Fit (a + b cos(2x-c))"}
           ],
           "files": [
             "/plots/ztautau/crs/W_SR_SS_linear.png",
@@ -610,7 +612,29 @@
             "/plots/ztautau/crs/W_QCDCR_SS_anti_ID_cosine.png",
             "/plots/ztautau/crs/W_QCDCR_OS_anti_ID_cosine.png",
             "/plots/ztautau/crs/W_WCR_SS_anti_ID_cosine.png",
-            "/plots/ztautau/crs/W_WCR_OS_anti_ID_cosine.png"
+            "/plots/ztautau/crs/W_WCR_OS_anti_ID_cosine.png",
+
+            "/plots/ztautau/crs/W_SR_SS_highupsilon_cosine.png",
+            "/plots/ztautau/crs/W_QCDCR_SS_highupsilon_cosine.png",
+            "/plots/ztautau/crs/W_QCDCR_OS_highupsilon_cosine.png",
+            "/plots/ztautau/crs/W_WCR_SS_highupsilon_cosine.png",
+            "/plots/ztautau/crs/W_WCR_OS_highupsilon_cosine.png",
+            "/plots/ztautau/crs/W_SR_OS_anti_ID_highupsilon_cosine.png",
+            "/plots/ztautau/crs/W_QCDCR_SS_anti_ID_highupsilon_cosine.png",
+            "/plots/ztautau/crs/W_QCDCR_OS_anti_ID_highupsilon_cosine.png",
+            "/plots/ztautau/crs/W_WCR_SS_anti_ID_highupsilon_cosine.png",
+            "/plots/ztautau/crs/W_WCR_OS_anti_ID_highupsilon_cosine.png",
+
+            "/plots/ztautau/crs/W_SR_SS_lowupsilon_cosine.png",
+            "/plots/ztautau/crs/W_QCDCR_SS_lowupsilon_cosine.png",
+            "/plots/ztautau/crs/W_QCDCR_OS_lowupsilon_cosine.png",
+            "/plots/ztautau/crs/W_WCR_SS_lowupsilon_cosine.png",
+            "/plots/ztautau/crs/W_WCR_OS_lowupsilon_cosine.png",
+            "/plots/ztautau/crs/W_SR_OS_anti_ID_lowupsilon_cosine.png",
+            "/plots/ztautau/crs/W_QCDCR_SS_anti_ID_lowupsilon_cosine.png",
+            "/plots/ztautau/crs/W_QCDCR_OS_anti_ID_lowupsilon_cosine.png",
+            "/plots/ztautau/crs/W_WCR_SS_anti_ID_lowupsilon_cosine.png",
+            "/plots/ztautau/crs/W_WCR_OS_anti_ID_lowupsilon_cosine.png"
           ]
         }
       ]
