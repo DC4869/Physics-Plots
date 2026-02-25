@@ -17,10 +17,21 @@ const pdfGridColsSelect = document.getElementById('pdf-grid-cols');
 let pdfDoc = null;
 let currentPage = 1;
 let multiPdfMode = false;
+let currentLoadId = 0;
+
+function nextLoadId() {
+  currentLoadId += 1;
+  return currentLoadId;
+}
+
+function isLoadActive(loadId) {
+  return loadId === currentLoadId && !!modal?.classList.contains('active');
+}
 
 // Open modal when plot card is clicked
 document.querySelectorAll('.plot-card').forEach((card) => {
   card.addEventListener('click', async (e) => {
+    const loadId = nextLoadId();
     const button = e.currentTarget;
     const plotFile = button?.dataset?.plotFile;
     const plotFiles = button?.dataset?.plotFiles;
@@ -39,15 +50,15 @@ document.querySelectorAll('.plot-card').forEach((card) => {
     if (plotGridLayout) {
       const gridLayout = JSON.parse(plotGridLayout);
       multiPdfMode = true;
-      await loadGridLayoutPDFs(gridLayout);
+      await loadGridLayoutPDFs(gridLayout, loadId);
     } else if (plotFiles) {
       const files = JSON.parse(plotFiles);
       const columnHeaders = plotColumnHeaders ? JSON.parse(plotColumnHeaders) : undefined;
       multiPdfMode = true;
-      await loadMultiplePDFs(files, columnHeaders);
+      await loadMultiplePDFs(files, columnHeaders, loadId);
     } else if (plotFile) {
       multiPdfMode = false;
-      await loadPDF(plotFile);
+      await loadPDF(plotFile, loadId);
     }
   });
 });
@@ -58,6 +69,10 @@ const closeModal = () => {
   document.body.style.overflow = '';
   pdfDoc = null;
   currentPage = 1;
+  nextLoadId();
+  if (pdfGridContainer) {
+    pdfGridContainer.innerHTML = '';
+  }
 };
 
 modalBackdrop?.addEventListener('click', closeModal);
@@ -84,11 +99,16 @@ function isImageFile(url) {
 }
 
 // Helper to render file (PDF or image) to canvas
-async function renderFileToCanvas(url, canvasElement) {
+async function renderFileToCanvas(url, canvasElement, loadId) {
+  if (!isLoadActive(loadId)) return;
   if (isImageFile(url)) {
     return new Promise((resolve, reject) => {
       const img = new Image();
       img.onload = () => {
+        if (!isLoadActive(loadId)) {
+          resolve();
+          return;
+        }
         canvasElement.width = img.width;
         canvasElement.height = img.height;
         const ctx = canvasElement.getContext('2d');
@@ -104,7 +124,9 @@ async function renderFileToCanvas(url, canvasElement) {
     // PDF rendering
     const loadingTask = pdfjsLib.getDocument(url);
     const pdf = await loadingTask.promise;
+    if (!isLoadActive(loadId)) return;
     const page = await pdf.getPage(1);
+    if (!isLoadActive(loadId)) return;
     const viewport = page.getViewport({ scale: 1.5 });
 
     canvasElement.width = viewport.width;
@@ -112,6 +134,7 @@ async function renderFileToCanvas(url, canvasElement) {
 
     const ctx = canvasElement.getContext('2d');
     if (ctx) {
+      if (!isLoadActive(loadId)) return;
       await page.render({
         canvasContext: ctx,
         viewport: viewport
@@ -121,8 +144,9 @@ async function renderFileToCanvas(url, canvasElement) {
 }
 
 // PDF/Image loading and rendering
-async function loadGridLayoutPDFs(gridLayout) {
+async function loadGridLayoutPDFs(gridLayout, loadId) {
   if (!pdfGridContainer) return;
+  if (!isLoadActive(loadId)) return;
 
   // Hide page controls for grid view
   if (pageInfo) pageInfo.style.display = 'none';
@@ -150,6 +174,7 @@ async function loadGridLayoutPDFs(gridLayout) {
 
   // Rows with row headers and files
   for (let rowIdx = 0; rowIdx < gridLayout.rows.length; rowIdx++) {
+    if (!isLoadActive(loadId)) return;
     // Row header
     const rowHeaderCell = document.createElement('div');
     rowHeaderCell.className = 'grid-row-header';
@@ -159,12 +184,13 @@ async function loadGridLayoutPDFs(gridLayout) {
     // File cells for this row
     const rowFiles = gridLayout.files[rowIdx] || [];
     for (const url of rowFiles) {
+      if (!isLoadActive(loadId)) return;
       const canvasElement = document.createElement('canvas');
       canvasElement.className = 'pdf-canvas';
       pdfGridContainer.appendChild(canvasElement);
 
       try {
-        await renderFileToCanvas(url, canvasElement);
+        await renderFileToCanvas(url, canvasElement, loadId);
       } catch (error) {
         console.error('Error loading file:', url, error);
         const ctx = canvasElement.getContext('2d');
@@ -190,8 +216,9 @@ async function loadGridLayoutPDFs(gridLayout) {
   pdfGridContainer.appendChild(rowHeaderLabel);
 }
 
-async function loadMultiplePDFs(urls, columnHeaders) {
+async function loadMultiplePDFs(urls, columnHeaders, loadId) {
   if (!pdfGridContainer) return;
+  if (!isLoadActive(loadId)) return;
 
   // Show grid controls for multi-file view
   if (pdfGridControls) pdfGridControls.style.display = 'flex';
@@ -216,6 +243,7 @@ async function loadMultiplePDFs(urls, columnHeaders) {
 
   // Load and render each file with headers
   for (let i = 0; i < urls.length; i++) {
+    if (!isLoadActive(loadId)) return;
     // Check if we need to insert a header before this plot
     if (headerMap.has(i)) {
       const headerElement = document.createElement('div');
@@ -230,7 +258,7 @@ async function loadMultiplePDFs(urls, columnHeaders) {
     pdfGridContainer.appendChild(canvasElement);
 
     try {
-      await renderFileToCanvas(url, canvasElement);
+      await renderFileToCanvas(url, canvasElement, loadId);
     } catch (error) {
       console.error('Error loading file:', url, error);
       // Show placeholder for failed files
@@ -250,8 +278,9 @@ async function loadMultiplePDFs(urls, columnHeaders) {
   }
 }
 
-async function loadPDF(url) {
+async function loadPDF(url, loadId) {
   if (!pdfGridContainer) return;
+  if (!isLoadActive(loadId)) return;
 
   // Check if it's an image
   if (isImageFile(url)) {
@@ -273,7 +302,7 @@ async function loadPDF(url) {
     pdfGridContainer.appendChild(canvasElement);
 
     try {
-      await renderFileToCanvas(url, canvasElement);
+      await renderFileToCanvas(url, canvasElement, loadId);
     } catch (error) {
       console.error('Error loading image:', error);
       showPlaceholder(canvasElement);
@@ -299,8 +328,9 @@ async function loadPDF(url) {
     try {
       const loadingTask = pdfjsLib.getDocument(url);
       pdfDoc = await loadingTask.promise;
+      if (!isLoadActive(loadId)) return;
       currentPage = 1;
-      renderPage(currentPage, canvasElement);
+      renderPage(currentPage, canvasElement, loadId);
     } catch (error) {
       console.error('Error loading PDF:', error);
       showPlaceholder(canvasElement);
@@ -328,10 +358,12 @@ function showPlaceholder(canvasElement) {
   }
 }
 
-async function renderPage(num, canvasElement) {
+async function renderPage(num, canvasElement, loadId) {
   if (!pdfDoc || !canvasElement) return;
+  if (!isLoadActive(loadId)) return;
 
   const page = await pdfDoc.getPage(num);
+  if (!isLoadActive(loadId)) return;
   const viewport = page.getViewport({ scale: 1.5 });
 
   canvasElement.width = viewport.width;
@@ -339,6 +371,7 @@ async function renderPage(num, canvasElement) {
 
   const ctx = canvasElement.getContext('2d');
   if (ctx) {
+    if (!isLoadActive(loadId)) return;
     await page.render({
       canvasContext: ctx,
       viewport: viewport
@@ -362,7 +395,7 @@ prevBtn?.addEventListener('click', () => {
   if (currentPage > 1) {
     currentPage--;
     const canvasElement = pdfGridContainer?.querySelector('#pdf-canvas');
-    if (canvasElement) renderPage(currentPage, canvasElement);
+    if (canvasElement) renderPage(currentPage, canvasElement, currentLoadId);
   }
 });
 
@@ -370,6 +403,6 @@ nextBtn?.addEventListener('click', () => {
   if (pdfDoc && currentPage < pdfDoc.numPages) {
     currentPage++;
     const canvasElement = pdfGridContainer?.querySelector('#pdf-canvas');
-    if (canvasElement) renderPage(currentPage, canvasElement);
+    if (canvasElement) renderPage(currentPage, canvasElement, currentLoadId);
   }
 });
