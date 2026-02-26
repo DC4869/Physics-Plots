@@ -61,6 +61,51 @@
           ]
         },
         {
+          "id": "psi_corrs",
+          "title": "Psi Corrections",
+          "description": "Psi in data for each control region with corrections",
+          "axes": { "x": "psi", "y": "Events"},
+          "columnHeaders": [
+            { "afterIndex": 0, "text": "No Correction" },
+            { "afterIndex": 10, "text": "d0 only correction" },
+            { "afterIndex": 20, "text": "d0 and beam-spot correction" }
+          ],
+          "files": [
+            "/plots/ztautau/crs/plot_reco_psi_mu1p1n_18_SR_SS_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_mu1p1n_18_QCDCR_SS_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_mu1p1n_18_WCR_SS_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_mu1p1n_18_WCR_OS_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_mu1p1n_18_SR_OS_anti_ID_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_mu1p1n_18_QCDCR_SS_anti_ID_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_mu1p1n_18_QCDCR_OS_anti_ID_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_mu1p1n_18_WCR_SS_anti_ID_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_mu1p1n_18_WCR_OS_anti_ID_medium_single_mu.png",
+
+            "/plots/ztautau/crs/plot_reco_psi_z0_corr_mu1p1n_18_SR_SS_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_z0_corr_mu1p1n_18_QCDCR_SS_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_z0_corr_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_z0_corr_mu1p1n_18_WCR_SS_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_z0_corr_mu1p1n_18_WCR_OS_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_z0_corr_mu1p1n_18_SR_OS_anti_ID_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_z0_corr_mu1p1n_18_QCDCR_SS_anti_ID_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_z0_corr_mu1p1n_18_QCDCR_OS_anti_ID_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_z0_corr_mu1p1n_18_WCR_SS_anti_ID_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_z0_corr_mu1p1n_18_WCR_OS_anti_ID_medium_single_mu.png",
+
+            "/plots/ztautau/crs/plot_reco_psi_z0_and_bs_corr_mu1p1n_18_SR_SS_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_z0_and_bs_corr_mu1p1n_18_QCDCR_SS_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_z0_and_bs_corr_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_z0_and_bs_corr_mu1p1n_18_WCR_SS_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_z0_and_bs_corr_mu1p1n_18_WCR_OS_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_z0_and_bs_corr_mu1p1n_18_SR_OS_anti_ID_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_z0_and_bs_corr_mu1p1n_18_QCDCR_SS_anti_ID_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_z0_and_bs_corr_mu1p1n_18_QCDCR_OS_anti_ID_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_z0_and_bs_corr_mu1p1n_18_WCR_SS_anti_ID_medium_single_mu.png",
+            "/plots/ztautau/crs/plot_reco_psi_z0_and_bs_corr_mu1p1n_18_WCR_OS_anti_ID_medium_single_mu.png"
+          ]
+        },
+        {
           "id": "tau_upsilon",
           "title": "Upsilon",
           "description": "Tau upsilon for each control region",
