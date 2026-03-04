@@ -67,8 +67,8 @@
           "axes": { "x": "psi", "y": "Events"},
           "columnHeaders": [
             { "afterIndex": 0, "text": "No Correction" },
-            { "afterIndex": 10, "text": "d0 only correction" },
-            { "afterIndex": 20, "text": "d0 and beam-spot correction" }
+            { "afterIndex": 10, "text": "z0 only correction" },
+            { "afterIndex": 20, "text": "z0 and beam-spot correction" }
           ],
           "files": [
             "/plots/ztautau/crs/plot_reco_psi_mu1p1n_18_SR_SS_medium_single_mu.png",
