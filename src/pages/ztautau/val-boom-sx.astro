@@ -1,0 +1,17 @@
+---
+import PlotGrid from '../../layouts/PlotGrid.astro';
+import ztautauConfig from '../../data/ztautau.json';
+
+const project = ztautauConfig;
+const subpage = project.subpages.find(s => s.id === 'val-boom-sx');
+
+if (!project || !subpage) throw new Error('Page not found');
+---
+
+<PlotGrid
+  projectName={project.name}
+  subpageName={subpage.name}
+  defaultGridCols={subpage.defaultGridCols}
+  plots={subpage.plots}
+  backLink="/ztautau"
+/>
