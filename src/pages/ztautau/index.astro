@@ -1,16 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
-import plotsData from '../../data/projects.json';
-import ztautauConfig from '../../data/ztautau.json';
+import project from '../../data/ztautau/index.js';
 import '../../styles/index.css'
-
-const projectMeta = plotsData.projects.find(p => p.id === 'ztautau');
-if (!projectMeta) throw new Error('Project not found');
-
-const project = {
-  ...projectMeta,
-  subpages: ztautauConfig.subpages
-};
 ---
 
 <Base title={project.name}>

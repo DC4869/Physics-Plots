@@ -1,16 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
-import plotsData from '../../data/projects.json';
-import taucpmlConfig from '../../data/taucp-ml.json';
+import project from '../../data/taucp-ml/index.js';
 import '../../styles/index.css'
-
-const projectMeta = plotsData.projects.find(p => p.id === 'taucp-ml');
-if (!projectMeta) throw new Error('Project not found');
-
-const project = {
-  ...projectMeta,
-  subpages: taucpmlConfig.subpages
-};
 ---
 
 <Base title={project.name}>

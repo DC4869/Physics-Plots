@@ -1,6 +1,8 @@
-# JSON Configuration Guide
+# Configuration Guide
 
 ## Project Structure
+
+At runtime, each project is a JavaScript object of this shape:
 
 ```json
 {
@@ -11,7 +13,28 @@
 }
 ```
 
-Note: `id` much match the name of a directory under `src/pages`. 
+This object is defined by a small JS "aggregator" module in
+`src/data/<project-id>/index.js` which imports the subpage JSON files and
+combines them with the project metadata:
+
+```js
+// src/data/<project-id>/index.js
+import subpageA from './subpage-a.json';
+import subpageB from './subpage-b.json';
+
+const meta = {
+  id: 'project-id',
+  name: 'Project Display Name',
+  description: 'Brief project description',
+};
+
+export default {
+  ...meta,
+  subpages: [subpageA, subpageB],
+};
+```
+
+Note: `id` must match the name of a directory under `src/pages`.
 
 ## Subpage Configuration
 
@@ -26,7 +49,8 @@ Note: `id` much match the name of a directory under `src/pages`.
 
 - `defaultGridCols`: Number of columns for multi-plot grid view (1-6)
 
-Note: `id` much match the name of a `.astro` page in `/src/pages/<project-id>/`; e.g.: `/src/pages/<project-id>/<subpage-id>.astro`
+Note: `id` much match the name of a `.astro` page in `/src/pages/<project-id>/`; 
+e.g.: `/src/pages/<project-id>/<subpage-id>.astro`
 
 ## Plot Types
 

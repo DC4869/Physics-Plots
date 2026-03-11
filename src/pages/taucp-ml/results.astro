@@ -1,9 +1,7 @@
 ---
 import PlotGrid from '../../layouts/PlotGrid.astro';
-import taucpmlConfig from '../../data/taucp-ml.json';
-
-const project = taucpmlConfig;
-const subpage = project.subpages.find(s => s.id === 'results');
+import project from '../../data/taucp-ml/index.js';
+import subpage from '../../data/taucp-ml/results.json';
 
 if (!project || !subpage) throw new Error('Page not found');
 ---

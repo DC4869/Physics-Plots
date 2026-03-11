@@ -1,0 +1,6 @@
+{
+  "id": "fits",
+  "name": "Signal Fits",
+  "defaultGridCols": 4,
+  "plots": []
+}

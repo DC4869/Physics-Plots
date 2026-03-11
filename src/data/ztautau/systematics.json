@@ -1,0 +1,6 @@
+{
+  "id": "systematics",
+  "name": "Systematic Uncertainties",
+  "defaultGridCols": 4,
+  "plots": []
+}

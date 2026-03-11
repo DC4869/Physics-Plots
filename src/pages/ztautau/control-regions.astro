@@ -1,9 +1,7 @@
 ---
 import PlotGrid from '../../layouts/PlotGrid.astro';
-import ztautauConfig from '../../data/ztautau.json';
-
-const project = ztautauConfig;
-const subpage = project.subpages.find(s => s.id === 'control-regions');
+import project from '../../data/ztautau/index.js';
+import subpage from '../../data/ztautau/control-regions.json';
 
 if (!project || !subpage) throw new Error('Page not found');
 ---

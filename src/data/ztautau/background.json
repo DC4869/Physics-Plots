@@ -1,0 +1,244 @@
+{
+  "id": "background",
+  "name": "Background Modeling",
+  "defaultGridCols": 3,
+  "plots": [
+    {
+      "id": "modeling-lep-pt",
+      "title": "Lepton pT",
+      "description": "Data/MC comparison for lepton transverse momentum across control regions",
+      "axes": { "x": "Lepton pT [GeV]", "y": "Events"},
+      "columnHeaders": [
+        { "afterIndex": 0, "text": "1D (tau pT)" },
+        { "afterIndex": 3, "text": "2D (tau pT vs lep charge)" },
+        { "afterIndex": 6, "text": "2D (tau pT vs lep pT)" },
+        { "afterIndex": 9, "text": "3D (tau pT vs lep pT vs lep charge)" }
+      ],
+      "files": [
+        "/plots/ztautau/modeling/rqcd_ss_1d/data_mc_lep_pt_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_1d/data_mc_lep_pt_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_1d/data_mc_lep_pt_mu1p1n_18_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/data_mc_lep_pt_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/data_mc_lep_pt_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/data_mc_lep_pt_mu1p1n_18_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d/data_mc_lep_pt_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d/data_mc_lep_pt_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d/data_mc_lep_pt_mu1p1n_18_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/data_mc_lep_pt_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/data_mc_lep_pt_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/data_mc_lep_pt_mu1p1n_18_SR_OS_medium_single_mu.png"
+      ]
+    },
+    {
+      "id": "modeling-lep-q",
+      "title": "Lepton Charge",
+      "description": "Data/MC comparison for lepton charge across control regions",
+      "axes": { "x": "Lepton Charge", "y": "Events"},
+      "columnHeaders": [
+        { "afterIndex": 0, "text": "2D (tau pT vs lep charge)" },
+        { "afterIndex": 3, "text": "3D (tau pT vs lep pT vs lep charge)" }
+      ],
+      "files": [
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/data_mc_lep_q_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/data_mc_lep_q_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/data_mc_lep_q_mu1p1n_18_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/data_mc_lep_q_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/data_mc_lep_q_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/data_mc_lep_q_mu1p1n_18_SR_OS_medium_single_mu.png"
+      ]
+    },
+    {
+      "id": "modeling-lephad-m",
+      "title": "Lep-Had Mass",
+      "description": "Data/MC comparison for lepton-hadron invariant mass across control regions",
+      "axes": { "x": "m(lep,had) [GeV]", "y": "Events"},
+      "columnHeaders": [
+        { "afterIndex": 0, "text": "1D (tau pT)" },
+        { "afterIndex": 3, "text": "2D (tau pT vs lep charge)" },
+        { "afterIndex": 6, "text": "2D (tau pT vs lep pT)" },
+        { "afterIndex": 9, "text": "3D (tau pT vs lep pT vs lep charge)" }
+      ],
+      "files": [
+        "/plots/ztautau/modeling/rqcd_ss_1d/data_mc_lephad_m_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_1d/data_mc_lephad_m_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_1d/data_mc_lephad_m_mu1p1n_18_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/data_mc_lephad_m_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/data_mc_lephad_m_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/data_mc_lephad_m_mu1p1n_18_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d/data_mc_lephad_m_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d/data_mc_lephad_m_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d/data_mc_lephad_m_mu1p1n_18_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/data_mc_lephad_m_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/data_mc_lephad_m_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/data_mc_lephad_m_mu1p1n_18_SR_OS_medium_single_mu.png"
+      ]
+    },
+    {
+      "id": "modeling-lephad-pt",
+      "title": "Lep-Had pT",
+      "description": "Data/MC comparison for lepton-hadron transverse momentum across control regions",
+      "axes": { "x": "pT(lep,had) [GeV]", "y": "Events"},
+      "columnHeaders": [
+        { "afterIndex": 0, "text": "1D (tau pT)" },
+        { "afterIndex": 3, "text": "2D (tau pT vs lep charge)" },
+        { "afterIndex": 6, "text": "2D (tau pT vs lep pT)" },
+        { "afterIndex": 9, "text": "3D (tau pT vs lep pT vs lep charge)" }
+      ],
+      "files": [
+        "/plots/ztautau/modeling/rqcd_ss_1d/data_mc_lephad_pt_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_1d/data_mc_lephad_pt_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_1d/data_mc_lephad_pt_mu1p1n_18_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/data_mc_lephad_pt_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/data_mc_lephad_pt_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/data_mc_lephad_pt_mu1p1n_18_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d/data_mc_lephad_pt_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d/data_mc_lephad_pt_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d/data_mc_lephad_pt_mu1p1n_18_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/data_mc_lephad_pt_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/data_mc_lephad_pt_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/data_mc_lephad_pt_mu1p1n_18_SR_OS_medium_single_mu.png"
+      ]
+    },
+    {
+      "id": "modeling-met",
+      "title": "Missing ET",
+      "description": "Data/MC comparison for missing transverse energy across control regions",
+      "axes": { "x": "MET [GeV]", "y": "Events"},
+      "columnHeaders": [
+        { "afterIndex": 0, "text": "1D (tau pT)" },
+        { "afterIndex": 3, "text": "2D (tau pT vs lep charge)" },
+        { "afterIndex": 6, "text": "2D (tau pT vs lep pT)" },
+        { "afterIndex": 9, "text": "3D (tau pT vs lep pT vs lep charge)" }
+      ],
+      "files": [
+        "/plots/ztautau/modeling/rqcd_ss_1d/data_mc_met_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_1d/data_mc_met_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_1d/data_mc_met_mu1p1n_18_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/data_mc_met_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/data_mc_met_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/data_mc_met_mu1p1n_18_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d/data_mc_met_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d/data_mc_met_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d/data_mc_met_mu1p1n_18_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/data_mc_met_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/data_mc_met_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/data_mc_met_mu1p1n_18_SR_OS_medium_single_mu.png"
+      ]
+    },
+    {
+      "id": "modeling-tau-pt",
+      "title": "Tau pT",
+      "description": "Data/MC comparison for tau transverse momentum across control regions",
+      "axes": { "x": "Tau pT [GeV]", "y": "Events"},
+      "columnHeaders": [
+        { "afterIndex": 0, "text": "1D (tau pT)" },
+        { "afterIndex": 3, "text": "2D (tau pT vs lep charge)" },
+        { "afterIndex": 6, "text": "2D (tau pT vs lep pT)" },
+        { "afterIndex": 9, "text": "3D (tau pT vs lep pT vs lep charge)" }
+      ],
+      "files": [
+        "/plots/ztautau/modeling/rqcd_ss_1d/data_mc_tau_pt_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_1d/data_mc_tau_pt_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_1d/data_mc_tau_pt_mu1p1n_18_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/data_mc_tau_pt_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/data_mc_tau_pt_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/data_mc_tau_pt_mu1p1n_18_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d/data_mc_tau_pt_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d/data_mc_tau_pt_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d/data_mc_tau_pt_mu1p1n_18_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/data_mc_tau_pt_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/data_mc_tau_pt_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/data_mc_tau_pt_mu1p1n_18_SR_OS_medium_single_mu.png"
+      ]
+    },
+    {
+      "id": "modeling-upsilon",
+      "title": "Upsilon (1p1n)",
+      "description": "Data/MC comparison for upsilon variable (1p1n) across control regions",
+      "axes": { "x": "Upsilon", "y": "Events"},
+      "columnHeaders": [
+        { "afterIndex": 0, "text": "1D (tau pT)" },
+        { "afterIndex": 3, "text": "2D (tau pT vs lep charge)" },
+        { "afterIndex": 6, "text": "2D (tau pT vs lep pT)" },
+        { "afterIndex": 9, "text": "3D (tau pT vs lep pT vs lep charge)" }
+      ],
+      "files": [
+        "/plots/ztautau/modeling/rqcd_ss_1d/data_mc_upsilon_1p1n_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_1d/data_mc_upsilon_1p1n_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_1d/data_mc_upsilon_1p1n_mu1p1n_18_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/data_mc_upsilon_1p1n_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/data_mc_upsilon_1p1n_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/data_mc_upsilon_1p1n_mu1p1n_18_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d/data_mc_upsilon_1p1n_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d/data_mc_upsilon_1p1n_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d/data_mc_upsilon_1p1n_mu1p1n_18_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/data_mc_upsilon_1p1n_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/data_mc_upsilon_1p1n_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/data_mc_upsilon_1p1n_mu1p1n_18_SR_OS_medium_single_mu.png"
+      ]
+    },
+    {
+      "id": "ff-1d",
+      "title": "Fake-Factors 1D",
+      "description": "1D fake factors across all classes",
+      "axes": { "x": "", "y": "Fake Factor"},
+      "files": [
+        "/plots/ztautau/modeling/rqcd_ss_1d/FF_qcd_medium_ss_tau_pt_ff_prebinning.png",
+        "/plots/ztautau/modeling/rqcd_ss_1d/FF_qcd_medium_ss_tau_pt_ff_prebinning.png",
+        "/plots/ztautau/modeling/rqcd_ss_1d/FF_rqcd_medium_ss_tau_pt_ff_prebinning.png",
+        "/plots/ztautau/modeling/rqcd_ss_1d/FF_W_medium_ss_tau_pt_ff_prebinning.png",
+        "/plots/ztautau/modeling/rqcd_ss_1d/FF_combined_medium_ss_tau_pt_ff_prebinning.png",
+        "/plots/ztautau/modeling/rqcd_ss_1d/Iso_FF_medium_ss_tau_pt_ff_prebinning.png"
+      ]
+    },
+    {
+      "id": "ff-2d-lep-q",
+      "title": "Fake-Factors (tau pT vs lep charge)",
+      "description": "2D fake factors parametrized by tau pT vs lep charge across all classes",
+      "axes": { "x": "", "y": "Fake Factor"},
+      "files": [
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/FF_qcd_medium_ss_tau_pt_ff_prebinning_vs_lep_q.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/FF_rqcd_medium_ss_tau_pt_ff_prebinning_vs_lep_q.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/FF_W_medium_ss_tau_pt_ff_prebinning_vs_lep_q.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/FF_combined_medium_ss_tau_pt_ff_prebinning_vs_lep_q.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d_lep_q/Iso_FF_medium_ss_tau_pt_ff_prebinning_vs_lep_q.png"
+      ]
+    },
+    {
+      "id": "ff-2d-lep-pt",
+      "title": "Fake-Factors (tau pT vs lep pT)",
+      "description": "2D fake factors parametrized by tau pT vs lep pT across all classes",
+      "axes": { "x": "", "y": "Fake Factor"},
+      "files": [
+        "/plots/ztautau/modeling/rqcd_ss_2d/FF_qcd_medium_ss_tau_pt_ff_prebinning_vs_lep_pt_ff_prebinning.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d/FF_rqcd_medium_ss_tau_pt_ff_prebinning_vs_lep_pt_ff_prebinning.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d/FF_W_medium_ss_tau_pt_ff_prebinning_vs_lep_pt_ff_prebinning.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d/FF_combined_medium_ss_tau_pt_ff_prebinning_vs_lep_pt_ff_prebinning.png",
+        "/plots/ztautau/modeling/rqcd_ss_2d/Iso_FF_medium_ss_tau_pt_ff_prebinning_vs_lep_pt_ff_prebinning.png"
+      ]
+    },
+    {
+      "id": "ff-3d-q-minus",
+      "title": "Fake-Factors 3D",
+      "description": "3D fake factors across all classes",
+      "axes": { "x": "", "y": "Fake Factor"},
+      "columnHeaders": [
+        { "afterIndex": 0, "text": "leq_q = -1" },
+        { "afterIndex": 5, "text": "lep_q = 1" }
+      ],
+      "files": [
+        "/plots/ztautau/modeling/rqcd_ss_3d/FF_qcd_medium_ss_lep_q_bin0_tau_pt_ff_prebinning_vs_lep_pt_ff_prebinning.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/FF_rqcd_medium_ss_lep_q_bin0_tau_pt_ff_prebinning_vs_lep_pt_ff_prebinning.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/FF_W_medium_ss_lep_q_bin0_tau_pt_ff_prebinning_vs_lep_pt_ff_prebinning.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/FF_combined_medium_ss_lep_q_bin0_tau_pt_ff_prebinning_vs_lep_pt_ff_prebinning.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/Iso_FF_medium_ss_lep_q_bin0_tau_pt_ff_prebinning_vs_lep_pt_ff_prebinning.png",
+
+        "/plots/ztautau/modeling/rqcd_ss_3d/FF_qcd_medium_ss_lep_q_bin1_tau_pt_ff_prebinning_vs_lep_pt_ff_prebinning.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/FF_rqcd_medium_ss_lep_q_bin1_tau_pt_ff_prebinning_vs_lep_pt_ff_prebinning.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/FF_W_medium_ss_lep_q_bin1_tau_pt_ff_prebinning_vs_lep_pt_ff_prebinning.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/FF_combined_medium_ss_lep_q_bin1_tau_pt_ff_prebinning_vs_lep_pt_ff_prebinning.png",
+        "/plots/ztautau/modeling/rqcd_ss_3d/Iso_FF_medium_ss_lep_q_bin1_tau_pt_ff_prebinning_vs_lep_pt_ff_prebinning.png"
+      ]
+    }
+  ]
+}

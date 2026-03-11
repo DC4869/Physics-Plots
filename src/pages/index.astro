@@ -1,19 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
-import plotsData from '../data/projects.json';
-import ztautauConfig from '../data/ztautau.json';
-import taucpmlConfig from '../data/taucp-ml.json';
+import ztautauConfig from '../data/ztautau/index.js';
+import taucpmlConfig from '../data/taucp-ml/index.js';
 import '../styles/index.css';
 
-const configMap: Record<string, typeof ztautauConfig | typeof taucpmlConfig> = {
-  'ztautau': ztautauConfig,
-  'taucp-ml': taucpmlConfig
-};
-
-const projects = plotsData.projects.map((project) => ({
-  ...project,
-  subpages: configMap[project.id].subpages
-}));
+const projects = [
+  ztautauConfig,
+  taucpmlConfig,
+];
 ---
 
 <Base title="Physics Analysis Plots">
