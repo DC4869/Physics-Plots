@@ -38,6 +38,13 @@ document.querySelectorAll('.plot-card').forEach((card) => {
     const plotColumnHeaders = button?.dataset?.plotColumnHeaders;
     const plotGridLayout = button?.dataset?.plotGridLayout;
     const plotTitle = button?.dataset?.plotTitle;
+    const plotGridCols = button?.dataset?.plotGridCols ? Number(button.dataset.plotGridCols) : undefined;
+
+    // Update dropdown to reflect correct column count
+    if (pdfGridColsSelect) {
+      const isMobile = window.innerWidth < 768;
+      pdfGridColsSelect.value = isMobile ? '1' : String(plotGridCols || (Number(modal?.getAttribute('data-default-grid-cols')) || 4));
+    }
 
     if (modalTitle && plotTitle) {
       modalTitle.textContent = plotTitle;
@@ -55,7 +62,7 @@ document.querySelectorAll('.plot-card').forEach((card) => {
       const files = JSON.parse(plotFiles);
       const columnHeaders = plotColumnHeaders ? JSON.parse(plotColumnHeaders) : undefined;
       multiPdfMode = true;
-      await loadMultiplePDFs(files, columnHeaders, loadId);
+      await loadMultiplePDFs(files, columnHeaders, loadId, plotGridCols);
     } else if (plotFile) {
       multiPdfMode = false;
       await loadPDF(plotFile, loadId);
@@ -86,6 +93,16 @@ document.addEventListener('keydown', (e) => {
 });
 
 // PDF Grid column selector
+// Update dropdown on window resize
+if (pdfGridColsSelect) {
+  window.addEventListener('resize', () => {
+    // Use last selected plot's grid cols if available
+    const activePlot = document.querySelector('.plot-card.active');
+    const plotGridCols = activePlot?.dataset?.plotGridCols ? Number(activePlot.dataset.plotGridCols) : null;
+    const isMobile = window.innerWidth < 768;
+    pdfGridColsSelect.value = isMobile ? '1' : String(plotGridCols || (Number(modal?.getAttribute('data-default-grid-cols')) || 4));
+  });
+}
 pdfGridColsSelect?.addEventListener('change', (e) => {
   const cols = e.target.value;
   if (pdfGridContainer && pdfGridContainer.classList.contains('multi-pdf-grid')) {
@@ -231,7 +248,11 @@ async function loadMultiplePDFs(urls, columnHeaders, loadId) {
   // Clear container and set it up for grid display
   pdfGridContainer.innerHTML = '';
   pdfGridContainer.className = 'multi-pdf-grid';
-  pdfGridContainer.style.gridTemplateColumns = `repeat(${pdfGridColsSelect?.value || 4}, 1fr)`;
+  // Accept plotGridCols as argument, fallback to selector or 4
+  // On mobile, always use 1 column
+  const isMobile = window.innerWidth < 768;
+  const gridCols = isMobile ? 1 : (arguments.length > 3 && typeof arguments[3] === 'number' ? arguments[3] : (pdfGridColsSelect?.value || 4));
+  pdfGridContainer.style.gridTemplateColumns = `repeat(${gridCols}, 1fr)`;
 
   // Create a map of indices where headers should appear
   const headerMap = new Map();

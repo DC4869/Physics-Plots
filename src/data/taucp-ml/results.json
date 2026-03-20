@@ -32,6 +32,7 @@
       "title": "e-Veto Results",
       "description": "Electron-veto score distribution and ROC curve",
       "axes": { "x": "Score", "y": "Events" },
+      "defaultGridCols": 2,
         "files": [
           "/plots/taucp-ml/results/electron_vs_qcd_roc.png",
           "/plots/taucp-ml/results/electron_vs_qcd_score_dist.png"
@@ -47,6 +48,7 @@
         { "afterIndex": 5, "text": "Score Distributions" },
         { "afterIndex": 10, "text": "Confusion Matrix" }
       ],
+      "defaultGridCols": 5,
         "files": [
           "/plots/taucp-ml/results/decay_mode_roc_1p0n.png",
           "/plots/taucp-ml/results/decay_mode_roc_1p1n.png",

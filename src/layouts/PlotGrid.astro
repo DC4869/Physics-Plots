@@ -39,28 +39,32 @@ const { projectName, subpageName, plots, backLink, defaultGridCols = 4 } = Astro
     </header>
 
     <div class="plot-grid">
-      {plots.map((plot) => (
-        <button 
-          class="plot-card" 
-          data-plot-id={plot.id}
-          data-plot-file={plot.file}
-          data-plot-files={plot.files ? JSON.stringify(plot.files) : undefined}
-          data-plot-column-headers={plot.columnHeaders ? JSON.stringify(plot.columnHeaders) : undefined}
-          data-plot-grid-layout={plot.gridLayout ? JSON.stringify(plot.gridLayout) : undefined}
-          data-plot-title={plot.title}
-          data-plot-description={plot.description}
-          data-plot-axes={JSON.stringify(plot.axes)}
-        >
-          <div class="plot-card-content">
-            <h3>{plot.title}</h3>
-            <p class="description">{plot.description}</p>
-            <div class="axes">
-              <span class="axis">x: {plot.axes.x}</span>
-              <span class="axis">y: {plot.axes.y}</span>
+      {plots.map((plot) => {
+        const plotGridCols = plot.defaultGridCols ?? defaultGridCols;
+        return (
+          <button 
+            class="plot-card" 
+            data-plot-id={plot.id}
+            data-plot-file={plot.file}
+            data-plot-files={plot.files ? JSON.stringify(plot.files) : undefined}
+            data-plot-column-headers={plot.columnHeaders ? JSON.stringify(plot.columnHeaders) : undefined}
+            data-plot-grid-layout={plot.gridLayout ? JSON.stringify(plot.gridLayout) : undefined}
+            data-plot-title={plot.title}
+            data-plot-description={plot.description}
+            data-plot-axes={JSON.stringify(plot.axes)}
+            data-plot-grid-cols={plotGridCols}
+          >
+            <div class="plot-card-content">
+              <h3>{plot.title}</h3>
+              <p class="description">{plot.description}</p>
+              <div class="axes">
+                <span class="axis">x: {plot.axes.x}</span>
+                <span class="axis">y: {plot.axes.y}</span>
+              </div>
             </div>
-          </div>
-        </button>
-      ))}
+          </button>
+        );
+      })}
     </div>
   </div>
 
@@ -97,20 +101,4 @@ const { projectName, subpageName, plots, backLink, defaultGridCols = 4 } = Astro
   </div>
 
   <script type="module" src="/scripts/plot-grid.js" is:inline></script>
-  <script>
-    // Set default columns based on screen size and config
-    const pdfGridColsSelect = document.getElementById('pdf-grid-cols') as HTMLSelectElement | null;
-    const plotModal = document.getElementById('plot-modal');
-    const configuredCols = Number(plotModal?.getAttribute('data-default-grid-cols')) || 4;
-    if (pdfGridColsSelect) {
-      const isMobile = window.innerWidth < 768;
-      pdfGridColsSelect.value = isMobile ? '1' : String(configuredCols);
-      
-      // Update on window resize
-      window.addEventListener('resize', () => {
-        const newIsMobile = window.innerWidth < 768;
-        pdfGridColsSelect.value = newIsMobile ? '1' : String(configuredCols);
-      });
-    }
-  </script>
 </Base>
