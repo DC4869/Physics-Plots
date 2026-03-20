@@ -8,112 +8,151 @@
       "title": "Track Features",
       "description": "Track Feature Inputs",
       "axes": { "x": "vars", "y": "Events" },
-      "files": [
-        "/plots/taucp-ml/inputs/track_trk_charge.png",
-        "/plots/taucp-ml/inputs/track_trk_d0.png",
-        "/plots/taucp-ml/inputs/track_trk_e_log.png",
-        "/plots/taucp-ml/inputs/track_trk_eta.png",
-        "/plots/taucp-ml/inputs/track_trk_nblayerhits.png",
-        "/plots/taucp-ml/inputs/track_trk_npixelhits.png",
-        "/plots/taucp-ml/inputs/track_trk_nscthits.png",
-        "/plots/taucp-ml/inputs/track_trk_ntrthighthresholdhits.png",
-        "/plots/taucp-ml/inputs/track_trk_ntrthits.png",
-        "/plots/taucp-ml/inputs/track_trk_phi.png",
-        "/plots/taucp-ml/inputs/track_trk_pt_log.png",
-        "/plots/taucp-ml/inputs/track_trk_z0.png",
-        "/plots/taucp-ml/inputs/track_trk_z0sintheta.png"
-      ]
+        "files": [
+          "/plots/taucp-ml/inputs/track_trk_deta.png",
+          "/plots/taucp-ml/inputs/track_trk_dphi.png",
+          "/plots/taucp-ml/inputs/track_trk_pt_log.png",
+          "/plots/taucp-ml/inputs/track_trk_e_log.png",
+          "/plots/taucp-ml/inputs/track_trk_eta.png",
+          "/plots/taucp-ml/inputs/track_trk_phi.png",
+          "/plots/taucp-ml/inputs/track_trk_charge.png",
+          "/plots/taucp-ml/inputs/track_trk_qoverp.png",
+          "/plots/taucp-ml/inputs/track_trk_d0.png",
+          "/plots/taucp-ml/inputs/track_trk_z0.png",
+          "/plots/taucp-ml/inputs/track_trk_z0sintheta.png",
+          "/plots/taucp-ml/inputs/track_trk_ntrthits.png",
+          "/plots/taucp-ml/inputs/track_trk_ntrthighthresholdhits.png",
+          "/plots/taucp-ml/inputs/track_trk_nscthits.png",
+          "/plots/taucp-ml/inputs/track_trk_npixelhits.png",
+          "/plots/taucp-ml/inputs/track_trk_nblayerhits.png"
+        ]
     },
     {
       "id": "cluster-feats",
       "title": "Cluster Features",
       "description": "Cluster Feature Inputs",
       "axes": { "x": "vars", "y": "Events" },
-      "files": [
-        "/plots/taucp-ml/inputs/cluster_cls_e_log.png",
-        "/plots/taucp-ml/inputs/cluster_cls_et_log.png",
-        "/plots/taucp-ml/inputs/cluster_cls_eta.png",
-        "/plots/taucp-ml/inputs/cluster_cls_first_eng_dens.png",
-        "/plots/taucp-ml/inputs/cluster_cls_phi.png"
-      ]
+        "files": [
+          "/plots/taucp-ml/inputs/cluster_cls_deta.png",
+          "/plots/taucp-ml/inputs/cluster_cls_dphi.png",
+          "/plots/taucp-ml/inputs/cluster_cls_et_log.png",
+          "/plots/taucp-ml/inputs/cluster_cls_e_log.png",
+          "/plots/taucp-ml/inputs/cluster_cls_eta.png",
+          "/plots/taucp-ml/inputs/cluster_cls_phi.png",
+          "/plots/taucp-ml/inputs/cluster_cls_first_eng_dens.png",
+          "/plots/taucp-ml/inputs/cluster_cls_second_r.png",
+          "/plots/taucp-ml/inputs/cluster_cls_em_probability.png",
+          "/plots/taucp-ml/inputs/cluster_cls_second_lambda.png",
+          "/plots/taucp-ml/inputs/cluster_cls_center_lambda.png",
+          "/plots/taucp-ml/inputs/cluster_cls_center_mag.png"
+        ]
     },
     {
       "id": "cell-feats",
       "title": "Cell Features",
       "description": "Calorimeter Cell Feature Inputs",
       "axes": { "x": "vars", "y": "Events" },
-      "files": [
-        "/plots/taucp-ml/inputs/cell_cell_cosphi.png",
-        "/plots/taucp-ml/inputs/cell_cell_costheta.png",
-        "/plots/taucp-ml/inputs/cell_cell_e_log.png",
-        "/plots/taucp-ml/inputs/cell_cell_et_log.png",
-        "/plots/taucp-ml/inputs/cell_cell_eta.png",
-        "/plots/taucp-ml/inputs/cell_cell_eta_dup.png",
-        "/plots/taucp-ml/inputs/cell_cell_layer.png",
-        "/plots/taucp-ml/inputs/cell_cell_phi.png",
-        "/plots/taucp-ml/inputs/cell_cell_phi_dup.png",
-        "/plots/taucp-ml/inputs/cell_cell_sinphi.png",
-        "/plots/taucp-ml/inputs/cell_cell_sintheta.png",
-        "/plots/taucp-ml/inputs/cell_cell_x.png",
-        "/plots/taucp-ml/inputs/cell_cell_y.png",
-        "/plots/taucp-ml/inputs/cell_cell_z.png"
-      ]
+        "files": [
+          "/plots/taucp-ml/inputs/cell_cell_deta.png",
+          "/plots/taucp-ml/inputs/cell_cell_dphi.png",
+          "/plots/taucp-ml/inputs/cell_cell_et_log.png",
+          "/plots/taucp-ml/inputs/cell_cell_e_log.png",
+          "/plots/taucp-ml/inputs/cell_cell_eta.png",
+          "/plots/taucp-ml/inputs/cell_cell_phi.png",
+          "/plots/taucp-ml/inputs/cell_cell_sintheta.png",
+          "/plots/taucp-ml/inputs/cell_cell_costheta.png",
+          "/plots/taucp-ml/inputs/cell_cell_sinphi.png",
+          "/plots/taucp-ml/inputs/cell_cell_cosphi.png",
+          "/plots/taucp-ml/inputs/cell_cell_layer.png",
+          "/plots/taucp-ml/inputs/cell_cell_x.png",
+          "/plots/taucp-ml/inputs/cell_cell_y.png",
+          "/plots/taucp-ml/inputs/cell_cell_z.png"
+        ]
     },
     {
       "id": "track-feats-decay",
       "title": "Track Features by Decay Mode",
       "description": "Track features split by decay mode",
       "axes": { "x": "vars", "y": "Events" },
-      "files": [
-        "/plots/taucp-ml/inputs/track_by_decay_mode_trk_charge.png",
-        "/plots/taucp-ml/inputs/track_by_decay_mode_trk_d0.png",
-        "/plots/taucp-ml/inputs/track_by_decay_mode_trk_e_log.png",
-        "/plots/taucp-ml/inputs/track_by_decay_mode_trk_eta.png",
-        "/plots/taucp-ml/inputs/track_by_decay_mode_trk_nblayerhits.png",
-        "/plots/taucp-ml/inputs/track_by_decay_mode_trk_npixelhits.png",
-        "/plots/taucp-ml/inputs/track_by_decay_mode_trk_nscthits.png",
-        "/plots/taucp-ml/inputs/track_by_decay_mode_trk_ntrthighthresholdhits.png",
-        "/plots/taucp-ml/inputs/track_by_decay_mode_trk_ntrthits.png",
-        "/plots/taucp-ml/inputs/track_by_decay_mode_trk_phi.png",
-        "/plots/taucp-ml/inputs/track_by_decay_mode_trk_pt_log.png",
-        "/plots/taucp-ml/inputs/track_by_decay_mode_trk_z0.png",
-        "/plots/taucp-ml/inputs/track_by_decay_mode_trk_z0sintheta.png"
-      ]
+        "files": [
+          "/plots/taucp-ml/inputs/track_by_decay_mode_trk_deta.png",
+          "/plots/taucp-ml/inputs/track_by_decay_mode_trk_dphi.png",
+          "/plots/taucp-ml/inputs/track_by_decay_mode_trk_pt_log.png",
+          "/plots/taucp-ml/inputs/track_by_decay_mode_trk_e_log.png",
+          "/plots/taucp-ml/inputs/track_by_decay_mode_trk_eta.png",
+          "/plots/taucp-ml/inputs/track_by_decay_mode_trk_phi.png",
+          "/plots/taucp-ml/inputs/track_by_decay_mode_trk_charge.png",
+          "/plots/taucp-ml/inputs/track_by_decay_mode_trk_qoverp.png",
+          "/plots/taucp-ml/inputs/track_by_decay_mode_trk_d0.png",
+          "/plots/taucp-ml/inputs/track_by_decay_mode_trk_z0.png",
+          "/plots/taucp-ml/inputs/track_by_decay_mode_trk_z0sintheta.png",
+          "/plots/taucp-ml/inputs/track_by_decay_mode_trk_ntrthits.png",
+          "/plots/taucp-ml/inputs/track_by_decay_mode_trk_ntrthighthresholdhits.png",
+          "/plots/taucp-ml/inputs/track_by_decay_mode_trk_nscthits.png",
+          "/plots/taucp-ml/inputs/track_by_decay_mode_trk_npixelhits.png",
+          "/plots/taucp-ml/inputs/track_by_decay_mode_trk_nblayerhits.png"
+        ]
     },
     {
       "id": "cluster-feats-decay",
       "title": "Cluster Features by Decay Mode",
       "description": "Cluster features split by decay mode",
       "axes": { "x": "vars", "y": "Events" },
-      "files": [
-        "/plots/taucp-ml/inputs/cluster_by_decay_mode_cls_e_log.png",
-        "/plots/taucp-ml/inputs/cluster_by_decay_mode_cls_et_log.png",
-        "/plots/taucp-ml/inputs/cluster_by_decay_mode_cls_eta.png",
-        "/plots/taucp-ml/inputs/cluster_by_decay_mode_cls_first_eng_dens.png",
-        "/plots/taucp-ml/inputs/cluster_by_decay_mode_cls_phi.png"
-      ]
+        "files": [
+          "/plots/taucp-ml/inputs/cluster_by_decay_mode_cls_deta.png",
+          "/plots/taucp-ml/inputs/cluster_by_decay_mode_cls_dphi.png",
+          "/plots/taucp-ml/inputs/cluster_by_decay_mode_cls_et_log.png",
+          "/plots/taucp-ml/inputs/cluster_by_decay_mode_cls_e_log.png",
+          "/plots/taucp-ml/inputs/cluster_by_decay_mode_cls_eta.png",
+          "/plots/taucp-ml/inputs/cluster_by_decay_mode_cls_phi.png",
+          "/plots/taucp-ml/inputs/cluster_by_decay_mode_cls_first_eng_dens.png",
+          "/plots/taucp-ml/inputs/cluster_by_decay_mode_cls_second_r.png",
+          "/plots/taucp-ml/inputs/cluster_by_decay_mode_cls_em_probability.png",
+          "/plots/taucp-ml/inputs/cluster_by_decay_mode_cls_second_lambda.png",
+          "/plots/taucp-ml/inputs/cluster_by_decay_mode_cls_center_lambda.png",
+          "/plots/taucp-ml/inputs/cluster_by_decay_mode_cls_center_mag.png"
+        ]
     },
     {
       "id": "cell-feats-decay",
       "title": "Cell Features by Decay Mode",
       "description": "Calorimeter cell features split by decay mode",
       "axes": { "x": "vars", "y": "Events" },
-      "files": [
-        "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_cosphi.png",
-        "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_costheta.png",
-        "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_e_log.png",
-        "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_et_log.png",
-        "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_eta.png",
-        "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_eta_dup.png",
-        "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_layer.png",
-        "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_phi.png",
-        "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_phi_dup.png",
-        "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_sinphi.png",
-        "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_sintheta.png",
-        "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_x.png",
-        "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_y.png",
-        "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_z.png"
-      ]
+        "files": [
+          "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_deta.png",
+          "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_dphi.png",
+          "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_et_log.png",
+          "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_e_log.png",
+          "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_eta.png",
+          "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_phi.png",
+          "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_sintheta.png",
+          "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_costheta.png",
+          "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_sinphi.png",
+          "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_cosphi.png",
+          "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_layer.png",
+          "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_x.png",
+          "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_y.png",
+          "/plots/taucp-ml/inputs/cell_by_decay_mode_cell_z.png"
+        ]
+    },
+    {
+      "id": "truth-regress",
+      "title": "Truth Regression Targets",
+      "description": "Truth tau and pion pt, eta, and phi",
+      "axes": { "x": "vars", "y": "Events" },
+        "files": [
+          "/plots/taucp-ml/inputs/truth_charged_pion_pt.png",
+          "/plots/taucp-ml/inputs/truth_charged_pion_eta.png",
+          "/plots/taucp-ml/inputs/truth_charged_pion_phi.png",
+          "/plots/taucp-ml/inputs/truth_charged_pion_multiplicity.png",
+          "/plots/taucp-ml/inputs/truth_neutral_pion_pt.png",
+          "/plots/taucp-ml/inputs/truth_neutral_pion_eta.png",
+          "/plots/taucp-ml/inputs/truth_neutral_pion_phi.png",
+          "/plots/taucp-ml/inputs/truth_neutral_pion_multiplicity.png",
+          "/plots/taucp-ml/inputs/truth_tau_truth_pt.png",
+          "/plots/taucp-ml/inputs/truth_tau_truth_eta.png",
+          "/plots/taucp-ml/inputs/truth_tau_truth_phi.png"
+        ]
     }
   ]
 }
