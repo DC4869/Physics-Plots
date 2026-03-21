@@ -10,7 +10,7 @@ interface Props {
     id: string;
     title: string;
     description: string;
-    axes: { x: string; y: string };
+    axes?: { x: string; y: string };
     file?: string;
     files?: string[];
     columnHeaders?: Array<{
@@ -58,10 +58,6 @@ const { projectName, subpageName, plots, backLink, defaultGridCols = 4 } = Astro
             <div class="plot-card-content">
               <h3>{plot.title}</h3>
               <p class="description">{plot.description}</p>
-              <div class="axes">
-                <span class="axis">x: {plot.axes.x}</span>
-                <span class="axis">y: {plot.axes.y}</span>
-              </div>
             </div>
           </button>
         );

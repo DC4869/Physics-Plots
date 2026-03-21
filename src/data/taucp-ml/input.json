@@ -5,7 +5,7 @@
   "plots": [
     {
       "id": "track-feats",
-      "title": "Track Features",
+      "title": "Tracks",
       "description": "Track Feature Inputs",
       "axes": { "x": "vars", "y": "Events" },
         "files": [
@@ -29,7 +29,7 @@
     },
     {
       "id": "cluster-feats",
-      "title": "Cluster Features",
+      "title": "Clusters",
       "description": "Cluster Feature Inputs",
       "axes": { "x": "vars", "y": "Events" },
         "files": [
@@ -49,8 +49,8 @@
     },
     {
       "id": "cell-feats",
-      "title": "Cell Features",
-      "description": "Calorimeter Cell Feature Inputs",
+      "title": "Cells",
+      "description": "Cell Feature Inputs",
       "axes": { "x": "vars", "y": "Events" },
         "files": [
           "/plots/taucp-ml/inputs/cell_cell_deta.png",
