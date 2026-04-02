@@ -20,5 +20,8 @@ const { title, description = "Physics Analysis Plot Viewer" } = Astro.props;
   </head>
   <body>
     <slot />
+    <footer class="site-footer">
+      &copy; {new Date().getFullYear()} Miles Cochran-Branson
+    </footer>
   </body>
 </html>

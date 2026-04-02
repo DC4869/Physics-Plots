@@ -10,12 +10,13 @@
       "axes": { "x": "vars", "y": "Events"},
       "columnHeaders": [
         { "afterIndex": 0, "text": "SR" },
-        { "afterIndex": 9, "text": "Fake CR" }
+        { "afterIndex": 10, "text": "Fake CR" }
       ],
       "files": [
         "/plots/ztautau/modeling/with_w/data_mc_tau_pt_mu1p1n_SR_OS_medium_single_mu.png",
-        "/plots/ztautau/modeling/with_w/data_mc_tau_pt_mu1p1n_18_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/with_w/data_mc_tau_eta_mu1p1n_SR_OS_medium_single_mu.png",
         "/plots/ztautau/modeling/with_w/data_mc_lep_pt_mu1p1n_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/with_w/data_mc_lep_eta_mu1p1n_SR_OS_medium_single_mu.png",
         "/plots/ztautau/modeling/with_w/data_mc_lep_q_mu1p1n_SR_OS_medium_single_mu.png",
         "/plots/ztautau/modeling/with_w/data_mc_lephad_m_mu1p1n_SR_OS_medium_single_mu.png",
         "/plots/ztautau/modeling/with_w/data_mc_lephad_pt_mu1p1n_SR_OS_medium_single_mu.png",
@@ -24,8 +25,9 @@
         "/plots/ztautau/modeling/with_w/data_mc_psi_reco_mu1p1n_18_SR_OS_medium_single_mu.png",
 
         "/plots/ztautau/modeling/with_w/data_mc_tau_pt_mu1p1n_SR_OS_anti_ID_medium_single_mu.png",
-        "/plots/ztautau/modeling/with_w/data_mc_tau_pt_mu1p1n_18_SR_OS_anti_ID_medium_single_mu.png",
+        "/plots/ztautau/modeling/with_w/data_mc_tau_eta_mu1p1n_SR_OS_anti_ID_medium_single_mu.png",
         "/plots/ztautau/modeling/with_w/data_mc_lep_pt_mu1p1n_SR_OS_anti_ID_medium_single_mu.png",
+        "/plots/ztautau/modeling/with_w/data_mc_lep_eta_mu1p1n_SR_OS_anti_ID_medium_single_mu.png",
         "/plots/ztautau/modeling/with_w/data_mc_lep_q_mu1p1n_SR_OS_anti_ID_medium_single_mu.png",
         "/plots/ztautau/modeling/with_w/data_mc_lephad_m_mu1p1n_SR_OS_anti_ID_medium_single_mu.png",
         "/plots/ztautau/modeling/with_w/data_mc_lephad_pt_mu1p1n_SR_OS_anti_ID_medium_single_mu.png",
@@ -41,12 +43,13 @@
       "axes": { "x": "vars", "y": "Events"},
       "columnHeaders": [
         { "afterIndex": 0, "text": "SR" },
-        { "afterIndex": 9, "text": "Fake CR" }
+        { "afterIndex": 10, "text": "Fake CR" }
       ],
       "files": [
         "/plots/ztautau/modeling/with_w/data_mc_tau_pt_mu1p1n_WCR_OS_medium_single_mu.png",
-        "/plots/ztautau/modeling/with_w/data_mc_tau_pt_mu1p1n_18_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/with_w/data_mc_tau_eta_mu1p1n_WCR_OS_medium_single_mu.png",
         "/plots/ztautau/modeling/with_w/data_mc_lep_pt_mu1p1n_WCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/with_w/data_mc_lep_eta_mu1p1n_WCR_OS_medium_single_mu.png",
         "/plots/ztautau/modeling/with_w/data_mc_lep_q_mu1p1n_WCR_OS_medium_single_mu.png",
         "/plots/ztautau/modeling/with_w/data_mc_lephad_m_mu1p1n_WCR_OS_medium_single_mu.png",
         "/plots/ztautau/modeling/with_w/data_mc_lephad_pt_mu1p1n_WCR_OS_medium_single_mu.png",
@@ -55,8 +58,9 @@
         "/plots/ztautau/modeling/with_w/data_mc_psi_reco_mu1p1n_18_WCR_OS_medium_single_mu.png",
 
         "/plots/ztautau/modeling/with_w/data_mc_tau_pt_mu1p1n_WCR_OS_anti_ID_medium_single_mu.png",
-        "/plots/ztautau/modeling/with_w/data_mc_tau_pt_mu1p1n_18_WCR_OS_anti_ID_medium_single_mu.png",
+        "/plots/ztautau/modeling/with_w/data_mc_tau_eta_mu1p1n_WCR_OS_anti_ID_medium_single_mu.png",
         "/plots/ztautau/modeling/with_w/data_mc_lep_pt_mu1p1n_WCR_OS_anti_ID_medium_single_mu.png",
+        "/plots/ztautau/modeling/with_w/data_mc_lep_eta_mu1p1n_WCR_OS_anti_ID_medium_single_mu.png",
         "/plots/ztautau/modeling/with_w/data_mc_lep_q_mu1p1n_WCR_OS_anti_ID_medium_single_mu.png",
         "/plots/ztautau/modeling/with_w/data_mc_lephad_m_mu1p1n_WCR_OS_anti_ID_medium_single_mu.png",
         "/plots/ztautau/modeling/with_w/data_mc_lephad_pt_mu1p1n_WCR_OS_anti_ID_medium_single_mu.png",
@@ -72,12 +76,13 @@
       "axes": { "x": "vars", "y": "Events"},
       "columnHeaders": [
         { "afterIndex": 0, "text": "SR" },
-        { "afterIndex": 9, "text": "Fake CR" }
+        { "afterIndex": 10, "text": "Fake CR" }
       ],
       "files": [
         "/plots/ztautau/modeling/with_w/data_mc_tau_pt_mu1p1n_QCDCR_OS_medium_single_mu.png",
-        "/plots/ztautau/modeling/with_w/data_mc_tau_pt_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/with_w/data_mc_tau_eta_mu1p1n_QCDCR_OS_medium_single_mu.png",
         "/plots/ztautau/modeling/with_w/data_mc_lep_pt_mu1p1n_QCDCR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/with_w/data_mc_lep_eta_mu1p1n_QCDCR_OS_medium_single_mu.png",
         "/plots/ztautau/modeling/with_w/data_mc_lep_q_mu1p1n_QCDCR_OS_medium_single_mu.png",
         "/plots/ztautau/modeling/with_w/data_mc_lephad_m_mu1p1n_QCDCR_OS_medium_single_mu.png",
         "/plots/ztautau/modeling/with_w/data_mc_lephad_pt_mu1p1n_QCDCR_OS_medium_single_mu.png",
@@ -86,8 +91,9 @@
         "/plots/ztautau/modeling/with_w/data_mc_psi_reco_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
 
         "/plots/ztautau/modeling/with_w/data_mc_tau_pt_mu1p1n_QCDCR_OS_anti_ID_medium_single_mu.png",
-        "/plots/ztautau/modeling/with_w/data_mc_tau_pt_mu1p1n_18_QCDCR_OS_anti_ID_medium_single_mu.png",
+        "/plots/ztautau/modeling/with_w/data_mc_tau_eta_mu1p1n_QCDCR_OS_anti_ID_medium_single_mu.png",
         "/plots/ztautau/modeling/with_w/data_mc_lep_pt_mu1p1n_QCDCR_OS_anti_ID_medium_single_mu.png",
+        "/plots/ztautau/modeling/with_w/data_mc_lep_eta_mu1p1n_QCDCR_OS_anti_ID_medium_single_mu.png",
         "/plots/ztautau/modeling/with_w/data_mc_lep_q_mu1p1n_QCDCR_OS_anti_ID_medium_single_mu.png",
         "/plots/ztautau/modeling/with_w/data_mc_lephad_m_mu1p1n_QCDCR_OS_anti_ID_medium_single_mu.png",
         "/plots/ztautau/modeling/with_w/data_mc_lephad_pt_mu1p1n_QCDCR_OS_anti_ID_medium_single_mu.png",
