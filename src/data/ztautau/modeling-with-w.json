@@ -113,10 +113,10 @@
         { "afterIndex": 2, "text": "CR" }
       ],
       "files": [
-        "/plots/ztautau/modeling/with_w/FF_qcd_medium_ss_tau_pt_ff_prebinning.png",
-        "/plots/ztautau/modeling/with_w/FF_W_medium_ss_tau_pt_ff_prebinning.png",
-        "/plots/ztautau/modeling/with_w/FF_qcd_medium_ss_control_tau_pt_ff_prebinning.png",
-        "/plots/ztautau/modeling/with_w/FF_W_medium_ss_control_tau_pt_ff_prebinning.png"
+        "/plots/ztautau/modeling/with_w/FF_qcd_medium_ss_tau_pt_ff_prebinning_vs_lep_q.png",
+        "/plots/ztautau/modeling/with_w/FF_W_medium_ss_tau_pt_ff_prebinning_vs_lep_pt_ff_prebinning.png",
+        "/plots/ztautau/modeling/with_w/FF_qcd_medium_ss_control_tau_pt_ff_prebinning_vs_lep_q.png",
+        "/plots/ztautau/modeling/with_w/FF_W_medium_ss_control_tau_pt_ff_prebinning_vs_lep_pt_ff_prebinning.png"
       ]
     }
   ]
