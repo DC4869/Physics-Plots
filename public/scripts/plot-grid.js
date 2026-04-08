@@ -144,10 +144,13 @@ async function renderFileToCanvas(url, canvasElement, loadId) {
     if (!isLoadActive(loadId)) return;
     const page = await pdf.getPage(1);
     if (!isLoadActive(loadId)) return;
-    const viewport = page.getViewport({ scale: 1.5 });
+    const dpr = window.devicePixelRatio || 1;
+    const viewport = page.getViewport({ scale: 1.5 * dpr });
 
     canvasElement.width = viewport.width;
     canvasElement.height = viewport.height;
+    canvasElement.style.width = `${viewport.width / dpr}px`;
+    canvasElement.style.height = `${viewport.height / dpr}px`;
 
     const ctx = canvasElement.getContext('2d');
     if (ctx) {
@@ -385,10 +388,13 @@ async function renderPage(num, canvasElement, loadId) {
 
   const page = await pdfDoc.getPage(num);
   if (!isLoadActive(loadId)) return;
-  const viewport = page.getViewport({ scale: 1.5 });
+  const dpr = window.devicePixelRatio || 1;
+  const viewport = page.getViewport({ scale: 1.5 * dpr });
 
   canvasElement.width = viewport.width;
   canvasElement.height = viewport.height;
+  canvasElement.style.width = `${viewport.width / dpr}px`;
+  canvasElement.style.height = `${viewport.height / dpr}px`;
 
   const ctx = canvasElement.getContext('2d');
   if (ctx) {

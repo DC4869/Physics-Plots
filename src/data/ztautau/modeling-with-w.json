@@ -118,6 +118,21 @@
         "/plots/ztautau/modeling/with_w/FF_qcd_medium_ss_control_tau_pt_ff_prebinning_vs_lep_q.png",
         "/plots/ztautau/modeling/with_w/FF_W_medium_ss_control_tau_pt_ff_prebinning_vs_lep_pt_ff_prebinning.png"
       ]
+    },
+    {
+      "id": "yields",
+      "title": "Yields",
+      "description": "Yield tables",
+      "axes": { "x": "vars", "y": "Events"},
+      "defaultGridCols": 3,
+      "files": [
+        "/plots/ztautau/modeling/with_w/yield_table_SR_OS.pdf",
+        "/plots/ztautau/modeling/with_w/yield_table_QCDCR_OS.pdf",
+        "/plots/ztautau/modeling/with_w/yield_table_WCR_OS.pdf",
+        "/plots/ztautau/modeling/with_w/yield_table_SR_OS_anti_ID.pdf",
+        "/plots/ztautau/modeling/with_w/yield_table_QCDCR_OS_anti_ID.pdf",
+        "/plots/ztautau/modeling/with_w/yield_table_WCR_OS_anti_ID.pdf"
+      ]
     }
   ]
 }
