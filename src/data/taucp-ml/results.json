@@ -11,66 +11,174 @@
         { "afterIndex": 0, "text": "ROC Curves" },
         { "afterIndex": 3, "text": "Score Distributions" },
         { "afterIndex": 6, "text": "Confusion Matrix" },
-        { "afterIndex": 8, "text": "QCD Rejection"}
+        { "afterIndex": 8, "text": "QCD Rejection"},
+        { "afterIndex": 10, "text": "Electron Rejection"}
       ],
-        "files": [
-          "/plots/taucp-ml/results/roc_tau_vs_rest.png",
-          "/plots/taucp-ml/results/roc_electron_vs_rest.png",
-          "/plots/taucp-ml/results/roc_qcd_vs_rest.png",
-          "/plots/taucp-ml/results/score_dist_tau.png",
-          "/plots/taucp-ml/results/score_dist_electron.png",
-          "/plots/taucp-ml/results/score_dist_qcd.png",
-          "/plots/taucp-ml/results/confusion_matrix_counts.png",
-          "/plots/taucp-ml/results/confusion_matrix_normalised.png",
-          "/plots/taucp-ml/results/tau_vs_qcd_roc.png",
-          "/plots/taucp-ml/results/tau_vs_qcd_rejection.png"
-        ]
-    },
-    {
-      "id": "e-veto",
-      "title": "e-Veto Results",
-      "description": "Electron-veto score distribution and ROC curve",
-      "axes": { "x": "Score", "y": "Events" },
-      "defaultGridCols": 2,
-        "files": [
-          "/plots/taucp-ml/results/electron_vs_qcd_roc.png",
-          "/plots/taucp-ml/results/electron_vs_qcd_score_dist.png"
-        ]
+      "files": [
+        "/plots/taucp-ml/results/roc_tau_vs_rest.png",
+        "/plots/taucp-ml/results/roc_electron_vs_rest.png",
+        "/plots/taucp-ml/results/roc_qcd_vs_rest.png",
+        "/plots/taucp-ml/results/score_dist_tau.png",
+        "/plots/taucp-ml/results/score_dist_electron.png",
+        "/plots/taucp-ml/results/score_dist_qcd.png",
+        "/plots/taucp-ml/results/confusion_matrix_counts.png",
+        "/plots/taucp-ml/results/confusion_matrix_normalised.png",
+        "/plots/taucp-ml/results/tau_vs_qcd_roc.png",
+        "/plots/taucp-ml/results/tau_vs_qcd_rejection.png",
+        "/plots/taucp-ml/results/tau_vs_ele_roc.png",
+        "/plots/taucp-ml/results/tau_vs_ele_rejection.png"
+      ]
     },
     {
       "id": "decay-mode",
       "title": "Decay Mode Classification",
       "description": "ROC, score, and confusion matrices for decay-mode task",
-      "axes": { "x": "True Label", "y": "Predicted Label" },
       "columnHeaders": [
         { "afterIndex": 0, "text": "ROC Curves" },
         { "afterIndex": 5, "text": "Score Distributions" },
-        { "afterIndex": 10, "text": "Confusion Matrix" }
+        { "afterIndex": 10, "text": "Confusion Matrix and Comparison" }
       ],
-      "defaultGridCols": 5,
-        "files": [
-          "/plots/taucp-ml/results/decay_mode_roc_1p0n.png",
-          "/plots/taucp-ml/results/decay_mode_roc_1p1n.png",
-          "/plots/taucp-ml/results/decay_mode_roc_1pXn.png",
-          "/plots/taucp-ml/results/decay_mode_roc_3p0n.png",
-          "/plots/taucp-ml/results/decay_mode_roc_3pXn.png",
-          "/plots/taucp-ml/results/decay_mode_score_dist_1p0n.png",
-          "/plots/taucp-ml/results/decay_mode_score_dist_1p1n.png",
-          "/plots/taucp-ml/results/decay_mode_score_dist_1pXn.png",
-          "/plots/taucp-ml/results/decay_mode_score_dist_3p0n.png",
-          "/plots/taucp-ml/results/decay_mode_score_dist_3pXn.png",
-          "/plots/taucp-ml/results/decay_mode_confusion_counts.png",
-          "/plots/taucp-ml/results/decay_mode_confusion_normalised.png"
-        ]
+      "defaultGridCols": 3,
+      "files": [
+        "/plots/taucp-ml/results/decay_mode_roc_1p0n.png",
+        "/plots/taucp-ml/results/decay_mode_roc_1p1n.png",
+        "/plots/taucp-ml/results/decay_mode_roc_1pXn.png",
+        "/plots/taucp-ml/results/decay_mode_roc_3p0n.png",
+        "/plots/taucp-ml/results/decay_mode_roc_3pXn.png",
+        "/plots/taucp-ml/results/decay_mode_score_dist_1p0n.png",
+        "/plots/taucp-ml/results/decay_mode_score_dist_1p1n.png",
+        "/plots/taucp-ml/results/decay_mode_score_dist_1pXn.png",
+        "/plots/taucp-ml/results/decay_mode_score_dist_3p0n.png",
+        "/plots/taucp-ml/results/decay_mode_score_dist_3pXn.png",
+        "/plots/taucp-ml/results/decay_mode_confusion_normalised_model.png",
+        "/plots/taucp-ml/results/decay_mode_confusion_normalised_pantau.png",
+        "/plots/taucp-ml/results/decay_mode_confusion_normalised_rnn.png"
+      ]
+    },
+    {
+      "id": "tau-regression",
+      "title": "Tau Regression",
+      "description": "Results of regressing tau pt, eta, and phi compared to current methods",
+      "columnHeaders": [
+        { "afterIndex": 0, "text": "Distributions" },
+        { "afterIndex": 4, "text": "Pt resolution vs truth pt, eta, phi" },
+        { "afterIndex": 7, "text": "Pt response vs truth pt, eta, phi" },
+        { "afterIndex": 10, "text": "Eta resolution vs truth pt, eta, phi"},
+        { "afterIndex": 13, "text": "Eta response vs truth pt, eta, phi"},
+        { "afterIndex": 16, "text": "Phi resolution vs truth pt, eta, phi"},
+        { "afterIndex": 19, "text": "Phi response vs truth pt, eta, phi"}
+      ],
+      "files": [
+        "/plots/taucp-ml/results/tau_pt_pred_dist.png",
+        "/plots/taucp-ml/results/tau_eta_pred_dist.png",
+        "/plots/taucp-ml/results/tau_phi_pred_dist.png",
+        "/plots/taucp-ml/results/tau_pt_response.png",
+        "/plots/taucp-ml/results/tau_pt_resolution_vs_pt.png",
+        "/plots/taucp-ml/results/tau_pt_resolution_vs_eta.png",
+        "/plots/taucp-ml/results/tau_pt_resolution_vs_phi.png",
+        "/plots/taucp-ml/results/tau_pt_response_vs_pt.png",
+        "/plots/taucp-ml/results/tau_pt_response_vs_eta.png",
+        "/plots/taucp-ml/results/tau_pt_response_vs_phi.png",
+        "/plots/taucp-ml/results/tau_eta_resolution_vs_pt.png",
+        "/plots/taucp-ml/results/tau_eta_resolution_vs_eta.png",
+        "/plots/taucp-ml/results/tau_eta_resolution_vs_phi.png",
+        "/plots/taucp-ml/results/tau_eta_response_vs_pt.png",
+        "/plots/taucp-ml/results/tau_eta_response_vs_eta.png",
+        "/plots/taucp-ml/results/tau_eta_response_vs_phi.png",
+        "/plots/taucp-ml/results/tau_phi_resolution_vs_pt.png",
+        "/plots/taucp-ml/results/tau_phi_resolution_vs_eta.png",
+        "/plots/taucp-ml/results/tau_phi_resolution_vs_phi.png",
+        "/plots/taucp-ml/results/tau_phi_response_vs_pt.png",
+        "/plots/taucp-ml/results/tau_phi_response_vs_eta.png",
+        "/plots/taucp-ml/results/tau_phi_response_vs_phi.png"
+      ]
+    },
+    {
+      "id": "charged-pion",
+      "title": "Charged Pion Regression",
+      "description": "Results of regressing charged pion pt, eta, and phi compared to current methods",
+      "columnHeaders": [
+        { "afterIndex": 0, "text": "Distributions" },
+        { "afterIndex": 4, "text": "Pt resolution vs truth pt, eta, phi" },
+        { "afterIndex": 7, "text": "Pt response vs truth pt, eta, phi" },
+        { "afterIndex": 10, "text": "Eta resolution vs truth pt, eta, phi"},
+        { "afterIndex": 13, "text": "Eta response vs truth pt, eta, phi"},
+        { "afterIndex": 16, "text": "Phi resolution vs truth pt, eta, phi"},
+        { "afterIndex": 19, "text": "Phi response vs truth pt, eta, phi"}
+      ],
+      "files": [
+        "/plots/taucp-ml/results/charged_pion_pt_pred_dist.png",
+        "/plots/taucp-ml/results/charged_pion_eta_pred_dist.png",
+        "/plots/taucp-ml/results/charged_pion_phi_pred_dist.png",
+        "/plots/taucp-ml/results/charged_pion_pt_response.png",
+        "/plots/taucp-ml/results/charged_pion_pt_resolution_vs_pt.png",
+        "/plots/taucp-ml/results/charged_pion_pt_resolution_vs_eta.png",
+        "/plots/taucp-ml/results/charged_pion_pt_resolution_vs_phi.png",
+        "/plots/taucp-ml/results/charged_pion_pt_response_vs_pt.png",
+        "/plots/taucp-ml/results/charged_pion_pt_response_vs_eta.png",
+        "/plots/taucp-ml/results/charged_pion_pt_response_vs_phi.png",
+        "/plots/taucp-ml/results/charged_pion_eta_resolution_vs_pt.png",
+        "/plots/taucp-ml/results/charged_pion_eta_resolution_vs_eta.png",
+        "/plots/taucp-ml/results/charged_pion_eta_resolution_vs_phi.png",
+        "/plots/taucp-ml/results/charged_pion_eta_response_vs_pt.png",
+        "/plots/taucp-ml/results/charged_pion_eta_response_vs_eta.png",
+        "/plots/taucp-ml/results/charged_pion_eta_response_vs_phi.png",
+        "/plots/taucp-ml/results/charged_pion_phi_resolution_vs_pt.png",
+        "/plots/taucp-ml/results/charged_pion_phi_resolution_vs_eta.png",
+        "/plots/taucp-ml/results/charged_pion_phi_resolution_vs_phi.png",
+        "/plots/taucp-ml/results/charged_pion_phi_response_vs_pt.png",
+        "/plots/taucp-ml/results/charged_pion_phi_response_vs_eta.png",
+        "/plots/taucp-ml/results/charged_pion_phi_response_vs_phi.png"
+      ]
+    },
+    {
+      "id": "neutral-pion",
+      "title": "Neutral Pion Regression",
+      "description": "Results of regressing neutral pion pt, eta, and phi compared to current methods",
+      "columnHeaders": [
+        { "afterIndex": 0, "text": "Distributions" },
+        { "afterIndex": 4, "text": "Pt resolution vs truth pt, eta, phi" },
+        { "afterIndex": 7, "text": "Pt response vs truth pt, eta, phi" },
+        { "afterIndex": 10, "text": "Eta resolution vs truth pt, eta, phi"},
+        { "afterIndex": 13, "text": "Eta response vs truth pt, eta, phi"},
+        { "afterIndex": 16, "text": "Phi resolution vs truth pt, eta, phi"},
+        { "afterIndex": 19, "text": "Phi response vs truth pt, eta, phi"}
+      ],
+      "files": [
+        "/plots/taucp-ml/results/neutral_pion_pt_pred_dist.png",
+        "/plots/taucp-ml/results/neutral_pion_eta_pred_dist.png",
+        "/plots/taucp-ml/results/neutral_pion_phi_pred_dist.png",
+        "/plots/taucp-ml/results/neutral_pion_pt_response.png",
+        "/plots/taucp-ml/results/neutral_pion_pt_resolution_vs_pt.png",
+        "/plots/taucp-ml/results/neutral_pion_pt_resolution_vs_eta.png",
+        "/plots/taucp-ml/results/neutral_pion_pt_resolution_vs_phi.png",
+        "/plots/taucp-ml/results/neutral_pion_pt_response_vs_pt.png",
+        "/plots/taucp-ml/results/neutral_pion_pt_response_vs_eta.png",
+        "/plots/taucp-ml/results/neutral_pion_pt_response_vs_phi.png",
+        "/plots/taucp-ml/results/neutral_pion_eta_resolution_vs_pt.png",
+        "/plots/taucp-ml/results/neutral_pion_eta_resolution_vs_eta.png",
+        "/plots/taucp-ml/results/neutral_pion_eta_resolution_vs_phi.png",
+        "/plots/taucp-ml/results/neutral_pion_eta_response_vs_pt.png",
+        "/plots/taucp-ml/results/neutral_pion_eta_response_vs_eta.png",
+        "/plots/taucp-ml/results/neutral_pion_eta_response_vs_phi.png",
+        "/plots/taucp-ml/results/neutral_pion_phi_resolution_vs_pt.png",
+        "/plots/taucp-ml/results/neutral_pion_phi_resolution_vs_eta.png",
+        "/plots/taucp-ml/results/neutral_pion_phi_resolution_vs_phi.png",
+        "/plots/taucp-ml/results/neutral_pion_phi_response_vs_pt.png",
+        "/plots/taucp-ml/results/neutral_pion_phi_response_vs_eta.png",
+        "/plots/taucp-ml/results/neutral_pion_phi_response_vs_phi.png"
+      ]
     },
     {
       "id": "training-loss",
-      "title": "Training and Validation Loss",
-      "description": "",
-      "axes": { "x": "True Label", "y": "Predicted Label" },
-        "files": [
-          "/plots/taucp-ml/results/training_loss.png"
-        ]
+      "title": "Training Parameters",
+      "description": "Training loss, time taken per epoch, and learning rate",
+      "defaultGridCols": 3,
+      "files": [
+        "/plots/taucp-ml/results/training_loss.png",
+        "/plots/taucp-ml/results/time_per_epoch.png",
+        "/plots/taucp-ml/results/learning_rate.png"
+      ]
     }
   ]
 }
