@@ -47,7 +47,7 @@ Note: `id` must match the name of a directory under `src/pages`.
 }
 ```
 
-- `defaultGridCols`: Number of columns for multi-plot grid view (1-6)
+- `defaultGridCols`: Number of columns for multi-plot grid view (1-8)
 
 Note: `id` much match the name of a `.astro` page in `/src/pages/<project-id>/`; 
 e.g.: `/src/pages/<project-id>/<subpage-id>.astro`
