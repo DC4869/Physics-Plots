@@ -135,9 +135,9 @@
       ]
     },
     {
-      "id": "sfs",
-      "title": "Scale Factors",
-      "description": "Applying scale factors one-by-one",
+      "id": "sfs-modeling",
+      "title": "Scale Factor Modeling",
+      "description": "Applying scale factors one-by-one for modeling",
       "defaultGridCols": 8,
       "columnHeaders": [
         { "afterIndex": 0, "text": "No SFs" },
@@ -401,6 +401,81 @@
         "/plots/ztautau/modeling/sfs/all_sfs/data_mc_lep_eta_mu1p1n_17_QCDCR_OS_medium_single_mu.png",
         "/plots/ztautau/modeling/sfs/all_sfs/data_mc_lep_pt_mu1p1n_18_QCDCR_OS_medium_single_mu.png",
         "/plots/ztautau/modeling/sfs/all_sfs/data_mc_lep_eta_mu1p1n_18_QCDCR_OS_medium_single_mu.png"
+      ]
+    },
+    {
+      "id": "sf-distributions",
+      "title": "Scale Factor Distributions",
+      "description": "Raw scale factor distributions by year",
+      "defaultGridCols": 4,
+      "columnHeaders": [
+        { "afterIndex": 0, "text": "Beam Spot" },
+        { "afterIndex": 4, "text": "B Veto" },
+        { "afterIndex": 8, "text": "JVT Central Eff" },
+        { "afterIndex": 12, "text": "JVT Central Ineff" },
+        { "afterIndex": 16, "text": "JVT Forward Eff" },
+        { "afterIndex": 20, "text": "JVT Forward Ineff" },
+        { "afterIndex": 24, "text": "Muon Isolation" },
+        { "afterIndex": 28, "text": "Muon Reco" },
+        { "afterIndex": 32, "text": "Pileup" },
+        { "afterIndex": 36, "text": "Single Mu Trigger" },
+        { "afterIndex": 40, "text": "Tau ID Medium" }
+      ],
+      "files": [
+        "/plots/ztautau/modeling/sfs/plot_sf_beam_spot_mu1p1n_15_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_beam_spot_mu1p1n_16_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_beam_spot_mu1p1n_17_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_beam_spot_mu1p1n_18_SR_OS_medium_single_mu.png",
+
+        "/plots/ztautau/modeling/sfs/plot_sf_b_veto_mu1p1n_15_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_b_veto_mu1p1n_16_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_b_veto_mu1p1n_17_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_b_veto_mu1p1n_18_SR_OS_medium_single_mu.png",
+
+        "/plots/ztautau/modeling/sfs/plot_sf_jvt_central_eff_mu1p1n_15_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_jvt_central_eff_mu1p1n_16_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_jvt_central_eff_mu1p1n_17_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_jvt_central_eff_mu1p1n_18_SR_OS_medium_single_mu.png",
+
+        "/plots/ztautau/modeling/sfs/plot_sf_jvt_central_ineff_mu1p1n_15_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_jvt_central_ineff_mu1p1n_16_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_jvt_central_ineff_mu1p1n_17_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_jvt_central_ineff_mu1p1n_18_SR_OS_medium_single_mu.png",
+
+        "/plots/ztautau/modeling/sfs/plot_sf_jvt_forward_eff_mu1p1n_15_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_jvt_forward_eff_mu1p1n_16_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_jvt_forward_eff_mu1p1n_17_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_jvt_forward_eff_mu1p1n_18_SR_OS_medium_single_mu.png",
+
+        "/plots/ztautau/modeling/sfs/plot_sf_jvt_forward_ineff_mu1p1n_15_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_jvt_forward_ineff_mu1p1n_16_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_jvt_forward_ineff_mu1p1n_17_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_jvt_forward_ineff_mu1p1n_18_SR_OS_medium_single_mu.png",
+
+        "/plots/ztautau/modeling/sfs/plot_sf_mu_iso_mu1p1n_15_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_mu_iso_mu1p1n_16_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_mu_iso_mu1p1n_17_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_mu_iso_mu1p1n_18_SR_OS_medium_single_mu.png",
+
+        "/plots/ztautau/modeling/sfs/plot_sf_mu_reco_mu1p1n_15_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_mu_reco_mu1p1n_16_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_mu_reco_mu1p1n_17_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_mu_reco_mu1p1n_18_SR_OS_medium_single_mu.png",
+
+        "/plots/ztautau/modeling/sfs/plot_sf_pileup_mu1p1n_15_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_pileup_mu1p1n_16_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_pileup_mu1p1n_17_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_pileup_mu1p1n_18_SR_OS_medium_single_mu.png",
+
+        "/plots/ztautau/modeling/sfs/plot_sf_single_mu_trig_15_mu1p1n_15_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_single_mu_trig_161718_mu1p1n_16_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_single_mu_trig_161718_mu1p1n_17_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_single_mu_trig_161718_mu1p1n_18_SR_OS_medium_single_mu.png",
+
+        "/plots/ztautau/modeling/sfs/plot_sf_tau_id_medium_mu1p1n_15_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_tau_id_medium_mu1p1n_16_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_tau_id_medium_mu1p1n_17_SR_OS_medium_single_mu.png",
+        "/plots/ztautau/modeling/sfs/plot_sf_tau_id_medium_mu1p1n_18_SR_OS_medium_single_mu.png"
       ]
     }
   ]
