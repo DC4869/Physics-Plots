@@ -31,6 +31,7 @@ print(f"\nDeleted {deleted} files.")
 result = {
     "id": "systematics",
     "name": "Systematic Uncertainties",
+    "description": "",
     "defaultGridCols": 4,
     "plots": [],
 }
