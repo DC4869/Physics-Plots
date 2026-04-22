@@ -7,6 +7,7 @@
     {
       "id": "muon-eff-iso-stat",
       "title": "MUON_EFF_ISO_STAT",
+      "description": "",
       "files": [
         "/plots/ztautau/systematics/MUON_EFF_ISO_STAT/Ztautau SR/sr_mu1p1n_OtherBkgs_MUON_EFF_ISO_STAT.png",
         "/plots/ztautau/systematics/MUON_EFF_ISO_STAT/Ztautau SR/sr_mu1p1n_W_MUON_EFF_ISO_STAT.png",
@@ -17,6 +18,7 @@
     {
       "id": "muon-eff-iso-sys",
       "title": "MUON_EFF_ISO_SYS",
+      "description": "",
       "files": [
         "/plots/ztautau/systematics/MUON_EFF_ISO_SYS/Ztautau SR/sr_mu1p1n_OtherBkgs_MUON_EFF_ISO_SYS.png",
         "/plots/ztautau/systematics/MUON_EFF_ISO_SYS/Ztautau SR/sr_mu1p1n_W_MUON_EFF_ISO_SYS.png",
@@ -27,6 +29,7 @@
     {
       "id": "muon-eff-reco-stat",
       "title": "MUON_EFF_RECO_STAT",
+      "description": "",
       "files": [
         "/plots/ztautau/systematics/MUON_EFF_RECO_STAT/Ztautau SR/sr_mu1p1n_OtherBkgs_MUON_EFF_RECO_STAT.png",
         "/plots/ztautau/systematics/MUON_EFF_RECO_STAT/Ztautau SR/sr_mu1p1n_W_MUON_EFF_RECO_STAT.png",
@@ -37,6 +40,7 @@
     {
       "id": "muon-eff-reco-stat-lowpt",
       "title": "MUON_EFF_RECO_STAT_LOWPT",
+      "description": "",
       "files": [
         "/plots/ztautau/systematics/MUON_EFF_RECO_STAT_LOWPT/Ztautau SR/sr_mu1p1n_OtherBkgs_MUON_EFF_RECO_STAT_LOWPT.png",
         "/plots/ztautau/systematics/MUON_EFF_RECO_STAT_LOWPT/Ztautau SR/sr_mu1p1n_W_MUON_EFF_RECO_STAT_LOWPT.png",
@@ -47,6 +51,7 @@
     {
       "id": "muon-eff-reco-sys",
       "title": "MUON_EFF_RECO_SYS",
+      "description": "",
       "files": [
         "/plots/ztautau/systematics/MUON_EFF_RECO_SYS/Ztautau SR/sr_mu1p1n_OtherBkgs_MUON_EFF_RECO_SYS.png",
         "/plots/ztautau/systematics/MUON_EFF_RECO_SYS/Ztautau SR/sr_mu1p1n_W_MUON_EFF_RECO_SYS.png",
@@ -57,6 +62,7 @@
     {
       "id": "muon-eff-reco-sys-lowpt",
       "title": "MUON_EFF_RECO_SYS_LOWPT",
+      "description": "",
       "files": [
         "/plots/ztautau/systematics/MUON_EFF_RECO_SYS_LOWPT/Ztautau SR/sr_mu1p1n_OtherBkgs_MUON_EFF_RECO_SYS_LOWPT.png",
         "/plots/ztautau/systematics/MUON_EFF_RECO_SYS_LOWPT/Ztautau SR/sr_mu1p1n_W_MUON_EFF_RECO_SYS_LOWPT.png",
@@ -67,6 +73,7 @@
     {
       "id": "muon-eff-trigstatuncertainty",
       "title": "MUON_EFF_TrigStatUncertainty",
+      "description": "",
       "files": [
         "/plots/ztautau/systematics/MUON_EFF_TrigStatUncertainty/Ztautau SR/sr_mu1p1n_OtherBkgs_MUON_EFF_TrigStatUncertainty.png",
         "/plots/ztautau/systematics/MUON_EFF_TrigStatUncertainty/Ztautau SR/sr_mu1p1n_W_MUON_EFF_TrigStatUncertainty.png",
@@ -77,6 +84,7 @@
     {
       "id": "muon-eff-trigsystuncertainty",
       "title": "MUON_EFF_TrigSystUncertainty",
+      "description": "",
       "files": [
         "/plots/ztautau/systematics/MUON_EFF_TrigSystUncertainty/Ztautau SR/sr_mu1p1n_OtherBkgs_MUON_EFF_TrigSystUncertainty.png",
         "/plots/ztautau/systematics/MUON_EFF_TrigSystUncertainty/Ztautau SR/sr_mu1p1n_W_MUON_EFF_TrigSystUncertainty.png",
@@ -87,6 +95,7 @@
     {
       "id": "fake-kw-stat",
       "title": "fake_kW_stat",
+      "description": "",
       "files": [
         "/plots/ztautau/systematics/fake_kW_stat/Ztautau SR/sr_mu1p1n_W_fake_kW_stat.png"
       ]
@@ -94,6 +103,7 @@
     {
       "id": "fake-rqcd-stat",
       "title": "fake_rQCD_stat",
+      "description": "",
       "files": [
         "/plots/ztautau/systematics/fake_rQCD_stat/Ztautau SR/sr_mu1p1n_Fake_fake_rQCD_stat.png",
         "/plots/ztautau/systematics/fake_rQCD_stat/Ztautau SR/sr_mu1p1n_OtherBkgs_fake_rQCD_stat.png",

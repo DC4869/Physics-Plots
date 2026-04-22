@@ -31,7 +31,6 @@ print(f"\nDeleted {deleted} files.")
 result = {
     "id": "systematics",
     "name": "Systematic Uncertainties",
-    "description": "",
     "defaultGridCols": 4,
     "plots": [],
 }
@@ -55,6 +54,7 @@ for syst in sorted(os.listdir(SYST_DIR)):
         {
             "id": syst.lower().replace("_", "-"),
             "title": syst,
+            "description": "",
             "files": files,
         }
     )
