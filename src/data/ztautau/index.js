@@ -1,5 +1,3 @@
-import controlRegions from './control-regions.json';
-import background from './background.json';
 import modelingWithW from './modeling-with-w.json';
 import systematics from './systematics.json';
 import fits from './fits.json';
@@ -12,8 +10,6 @@ const meta = {
 };
 
 const subpages = [
-  controlRegions,
-  background,
   modelingWithW,
   systematics,
   fits,
