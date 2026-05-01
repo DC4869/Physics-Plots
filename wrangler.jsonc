@@ -13,7 +13,7 @@
     },
     "routes": [
         {
-            "pattern": "plots.milescb.com",
+            "pattern": "plots.huanguo.com",
             "custom_domain": true
         }
     ]

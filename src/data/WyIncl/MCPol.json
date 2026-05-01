@@ -1,0 +1,144 @@
+{
+  "id": "MCPol",
+  "name": "MC Polarisation",
+  "defaultGridCols": 3,
+  "plots": [
+    {
+      "id": "MCPol-1D-Nominal",
+      "title": "1D distributions",
+      "description": "Angular observable 1D distributions",
+      "axes": { "x": "vars", "y": "Events"},
+      "columnHeaders": [
+        { "afterIndex": 0, "text": "W- #theta" },
+        { "afterIndex": 10, "text": "W- #varphi" },
+        { "afterIndex": 20, "text": "W+ #theta" },
+        { "afterIndex": 30, "text": "W+ #varphi" }
+      ],
+      "files": [
+        "/plots/WyIncl/MCPol/1dNominal/Wm_SMEW_Wy_Phi_Calculation_h_theta_W[PolWeight_refsystem2.Weight1]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wm_SMEW_Wy_Phi_Calculation_h_theta_W[PolWeight_refsystem2.Weight2]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wm_SMEW_Wy_Phi_Calculation_h_theta_W[PolWeight_refsystem2.Weight3]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wm_SMEW_Wy_Phi_Calculation_h_theta_W[PolWeight_refsystem2.Weight4]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wm_SMEW_Wy_Phi_Calculation_h_theta_W[PolWeight_refsystem2.Weight5]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wm_SMEW_Wy_Phi_Calculation_h_theta_W[PolWeight_refsystem2.Weight6]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wm_SMEW_Wy_Phi_Calculation_h_theta_W[PolWeight_refsystem2.Weight7]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wm_SMEW_Wy_Phi_Calculation_h_theta_W[PolWeight_refsystem2.Weight8]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wm_SMEW_Wy_Phi_Calculation_h_theta_W[PolWeight_refsystem2.Weight9]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wm_SMEW_Wy_Phi_Calculation_h_theta_W.png",
+
+        "/plots/WyIncl/MCPol/1dNominal/Wm_SMEW_Wy_Phi_Calculation_h_phi_W[PolWeight_refsystem2.Weight1]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wm_SMEW_Wy_Phi_Calculation_h_phi_W[PolWeight_refsystem2.Weight2]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wm_SMEW_Wy_Phi_Calculation_h_phi_W[PolWeight_refsystem2.Weight3]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wm_SMEW_Wy_Phi_Calculation_h_phi_W[PolWeight_refsystem2.Weight4]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wm_SMEW_Wy_Phi_Calculation_h_phi_W[PolWeight_refsystem2.Weight5]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wm_SMEW_Wy_Phi_Calculation_h_phi_W[PolWeight_refsystem2.Weight6]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wm_SMEW_Wy_Phi_Calculation_h_phi_W[PolWeight_refsystem2.Weight7]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wm_SMEW_Wy_Phi_Calculation_h_phi_W[PolWeight_refsystem2.Weight8]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wm_SMEW_Wy_Phi_Calculation_h_phi_W[PolWeight_refsystem2.Weight9]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wm_SMEW_Wy_Phi_Calculation_h_phi_W.png",
+
+        "/plots/WyIncl/MCPol/1dNominal/Wp_SMEW_Wy_Phi_Calculation_h_theta_W[PolWeight_refsystem2.Weight1]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wp_SMEW_Wy_Phi_Calculation_h_theta_W[PolWeight_refsystem2.Weight2]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wp_SMEW_Wy_Phi_Calculation_h_theta_W[PolWeight_refsystem2.Weight3]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wp_SMEW_Wy_Phi_Calculation_h_theta_W[PolWeight_refsystem2.Weight4]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wp_SMEW_Wy_Phi_Calculation_h_theta_W[PolWeight_refsystem2.Weight5]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wp_SMEW_Wy_Phi_Calculation_h_theta_W[PolWeight_refsystem2.Weight6]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wp_SMEW_Wy_Phi_Calculation_h_theta_W[PolWeight_refsystem2.Weight7]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wp_SMEW_Wy_Phi_Calculation_h_theta_W[PolWeight_refsystem2.Weight8]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wp_SMEW_Wy_Phi_Calculation_h_theta_W[PolWeight_refsystem2.Weight9]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wp_SMEW_Wy_Phi_Calculation_h_theta_W.png",
+
+        "/plots/WyIncl/MCPol/1dNominal/Wp_SMEW_Wy_Phi_Calculation_h_phi_W[PolWeight_refsystem2.Weight1]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wp_SMEW_Wy_Phi_Calculation_h_phi_W[PolWeight_refsystem2.Weight2]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wp_SMEW_Wy_Phi_Calculation_h_phi_W[PolWeight_refsystem2.Weight3]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wp_SMEW_Wy_Phi_Calculation_h_phi_W[PolWeight_refsystem2.Weight4]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wp_SMEW_Wy_Phi_Calculation_h_phi_W[PolWeight_refsystem2.Weight5]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wp_SMEW_Wy_Phi_Calculation_h_phi_W[PolWeight_refsystem2.Weight6]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wp_SMEW_Wy_Phi_Calculation_h_phi_W[PolWeight_refsystem2.Weight7]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wp_SMEW_Wy_Phi_Calculation_h_phi_W[PolWeight_refsystem2.Weight8]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wp_SMEW_Wy_Phi_Calculation_h_phi_W[PolWeight_refsystem2.Weight9]_weight.png",
+        "/plots/WyIncl/MCPol/1dNominal/Wp_SMEW_Wy_Phi_Calculation_h_phi_W.png"
+      ]
+    },
+    {
+      "id": "MCPol-1D-Ratio",
+      "title": "1D ratios",
+      "description": "Angular observable 1D ratios",
+      "axes": { "x": "vars", "y": "Events"},
+      "columnHeaders": [
+        { "afterIndex": 0, "text": "W-" },
+        { "afterIndex": 2, "text": "W+" }
+      ],
+      "files": [
+        "/plots/WyIncl/MCPol/1dRatio/Wm_SMEW_Wy_Phi_Calculation_h_phi_W.png",
+        "/plots/WyIncl/MCPol/1dRatio/Wm_SMEW_Wy_Phi_Calculation_h_theta_W.png",
+        "/plots/WyIncl/MCPol/1dRatio/Wp_SMEW_Wy_Phi_Calculation_h_phi_W.png",
+        "/plots/WyIncl/MCPol/1dRatio/Wp_SMEW_Wy_Phi_Calculation_h_theta_W.png"
+      ]
+    },
+    {
+      "id": "MCPol-2D-Nominal",
+      "title": "2D distributions",
+      "description": "Angular observable 2D distributions",
+      "axes": { "x": "vars", "y": "Events"},
+      "columnHeaders": [
+        { "afterIndex": 0, "text": "W-" },
+        { "afterIndex": 10, "text": "W+" }
+      ],
+      "files": [
+        "/plots/WyIncl/MCPol/2dNominal/Wm_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight1]_weight.png",
+        "/plots/WyIncl/MCPol/2dNominal/Wm_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight2]_weight.png",
+        "/plots/WyIncl/MCPol/2dNominal/Wm_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight3]_weight.png",
+        "/plots/WyIncl/MCPol/2dNominal/Wm_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight4]_weight.png",
+        "/plots/WyIncl/MCPol/2dNominal/Wm_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight5]_weight.png",
+        "/plots/WyIncl/MCPol/2dNominal/Wm_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight6]_weight.png",
+        "/plots/WyIncl/MCPol/2dNominal/Wm_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight7]_weight.png",
+        "/plots/WyIncl/MCPol/2dNominal/Wm_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight8]_weight.png",
+        "/plots/WyIncl/MCPol/2dNominal/Wm_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight9]_weight.png",
+        "/plots/WyIncl/MCPol/2dNominal/Wm_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W_nominal.png",
+
+        "/plots/WyIncl/MCPol/2dNominal/Wp_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight1]_weight.png",
+        "/plots/WyIncl/MCPol/2dNominal/Wp_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight2]_weight.png",
+        "/plots/WyIncl/MCPol/2dNominal/Wp_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight3]_weight.png",
+        "/plots/WyIncl/MCPol/2dNominal/Wp_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight4]_weight.png",
+        "/plots/WyIncl/MCPol/2dNominal/Wp_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight5]_weight.png",
+        "/plots/WyIncl/MCPol/2dNominal/Wp_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight6]_weight.png",
+        "/plots/WyIncl/MCPol/2dNominal/Wp_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight7]_weight.png",
+        "/plots/WyIncl/MCPol/2dNominal/Wp_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight8]_weight.png",
+        "/plots/WyIncl/MCPol/2dNominal/Wp_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight9]_weight.png",
+        "/plots/WyIncl/MCPol/2dNominal/Wp_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W_nominal.png"
+      ]
+    },
+    {
+      "id": "MCPol-2D-Ratio",
+      "title": "2D ratios",
+      "description": "Angular observable 2D ratios",
+      "axes": { "x": "vars", "y": "Events"},
+      "columnHeaders": [
+        { "afterIndex": 0, "text": "W-" },
+        { "afterIndex": 9, "text": "W+" }
+      ],
+      "files": [
+        "/plots/WyIncl/MCPol/2dRatio/Wm_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight1]_ratio.png",
+        "/plots/WyIncl/MCPol/2dRatio/Wm_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight2]_ratio.png",
+        "/plots/WyIncl/MCPol/2dRatio/Wm_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight3]_ratio.png",
+        "/plots/WyIncl/MCPol/2dRatio/Wm_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight4]_ratio.png",
+        "/plots/WyIncl/MCPol/2dRatio/Wm_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight5]_ratio.png",
+        "/plots/WyIncl/MCPol/2dRatio/Wm_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight6]_ratio.png",
+        "/plots/WyIncl/MCPol/2dRatio/Wm_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight7]_ratio.png",
+        "/plots/WyIncl/MCPol/2dRatio/Wm_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight8]_ratio.png",
+        "/plots/WyIncl/MCPol/2dRatio/Wm_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight9]_ratio.png",
+
+        "/plots/WyIncl/MCPol/2dRatio/Wp_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight1]_ratio.png",
+        "/plots/WyIncl/MCPol/2dRatio/Wp_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight2]_ratio.png",
+        "/plots/WyIncl/MCPol/2dRatio/Wp_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight3]_ratio.png",
+        "/plots/WyIncl/MCPol/2dRatio/Wp_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight4]_ratio.png",
+        "/plots/WyIncl/MCPol/2dRatio/Wp_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight5]_ratio.png",
+        "/plots/WyIncl/MCPol/2dRatio/Wp_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight6]_ratio.png",
+        "/plots/WyIncl/MCPol/2dRatio/Wp_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight7]_ratio.png",
+        "/plots/WyIncl/MCPol/2dRatio/Wp_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight8]_ratio.png",
+        "/plots/WyIncl/MCPol/2dRatio/Wp_SMEW_Wy_Phi_Calculation_h_2d_phi_W_theta_W[PolWeight_refsystem2.Weight9]_ratio.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "modeling",
+  "name": "Modeling",
+  "defaultGridCols": 5,
+  "plots": [
+    {
+      "id": "modeling",
+      "title": "Signal Region",
+      "description": "Data/MC comparison in signal region",
+      "axes": { "x": "vars", "y": "Events"},
+      "columnHeaders": [
+        { "afterIndex": 0, "text": "Top CR" },
+        { "afterIndex": 10, "text": "W CR" }
+      ],
+      "files": [
+        "/plots/VVsemilep/modeling/W_had_cs_mass_one_lep_tight_el_TCR.png",
+        "/plots/VVsemilep/modeling/W_had_cs_mass_one_lep_tight_mu_TCR.png",
+        "/plots/VVsemilep/modeling/W_had_cs_phi_one_lep_tight_el_TCR.png",
+        "/plots/VVsemilep/modeling/W_had_cs_phi_one_lep_tight_mu_TCR.png",
+        "/plots/VVsemilep/modeling/W_had_cs_theta_one_lep_tight_el_TCR.png",
+        "/plots/VVsemilep/modeling/W_had_cs_theta_one_lep_tight_mu_TCR.png",
+        "/plots/VVsemilep/modeling/W_lep_lv_phi_one_lep_tight_el_TCR.png",
+        "/plots/VVsemilep/modeling/W_lep_lv_phi_one_lep_tight_mu_TCR.png",
+        "/plots/VVsemilep/modeling/W_lep_lv_theta_one_lep_tight_el_TCR.png",
+        "/plots/VVsemilep/modeling/W_lep_lv_theta_one_lep_tight_mu_TCR.png",
+
+        "/plots/VVsemilep/modeling/W_had_cs_mass_one_lep_tight_el_WCR.png",
+        "/plots/VVsemilep/modeling/W_had_cs_mass_one_lep_tight_mu_WCR.png",
+        "/plots/VVsemilep/modeling/W_had_cs_phi_one_lep_tight_el_WCR.png",
+        "/plots/VVsemilep/modeling/W_had_cs_phi_one_lep_tight_mu_WCR.png",
+        "/plots/VVsemilep/modeling/W_had_cs_theta_one_lep_tight_el_WCR.png",
+        "/plots/VVsemilep/modeling/W_had_cs_theta_one_lep_tight_mu_WCR.png",
+        "/plots/VVsemilep/modeling/W_lep_lv_phi_one_lep_tight_el_WCR.png",
+        "/plots/VVsemilep/modeling/W_lep_lv_phi_one_lep_tight_mu_WCR.png",
+        "/plots/VVsemilep/modeling/W_lep_lv_theta_one_lep_tight_el_WCR.png",
+        "/plots/VVsemilep/modeling/W_lep_lv_theta_one_lep_tight_mu_WCR.png"
+      ]
+    }
+  ]
+}
